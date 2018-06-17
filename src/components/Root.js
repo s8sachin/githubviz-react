@@ -16,7 +16,7 @@ class Root extends Component {
               extra attention to featured content or information.
             </p>
             <p>
-              <Button bsStyle="primary">Learn more</Button>
+              <Button bsStyle="primary" href='/allGraphs'>Learn more</Button>
             </p>
           </Jumbotron>
         </Grid>
