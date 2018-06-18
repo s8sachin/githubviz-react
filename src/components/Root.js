@@ -4,6 +4,9 @@ import Header from './commons/Header';
 
 class Root extends Component {
 
+  clickFunc() {
+    console.log("hi")
+  }
   render() {
     return (
       <div>

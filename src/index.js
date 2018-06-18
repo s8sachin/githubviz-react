@@ -19,6 +19,7 @@ ReactDOM.render((
       <Switch>
         <Route exact path="/" component={App}/>
         <Route exact path="/allGraphs" component={AllGraphs}/>
+        
       </Switch>
     </Router>
   </Provider>
