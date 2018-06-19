@@ -18,10 +18,14 @@ const data = [
   {x: 9, y: 0}
 ];
 class AllGraphs extends Component {
+  state = {
+    message: "hello"
+  }
   render () {
     return (
       <div>
-        <Header/>
+        <Header mymessage="graphs"/>
+        {this.state.message}
         <Grid>
   <Row className="show-grid">
     <Col xs={12} md={8}>
@@ -51,7 +55,7 @@ class AllGraphs extends Component {
 <FlexibleXYPlot>
   <VerticalBarSeries data={data} />
 </FlexibleXYPlot>
-    <Button bsStyle="success">Success</Button>
+    <Button bsStyle="success" onClick={()=> this.setState({message: "hiii"})}>Success</Button>
     </Col>
   </Row>
   </Grid>
