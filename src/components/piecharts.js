@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from './commons/Header';
 import { Grid,Row,Col} from 'react-bootstrap';
 import { RadialChart,Hint,XYPlot,ArcSeries} from 'react-vis';
-import 'react-vis/dist/style.css';
 class  Piecharts extends Component {
   render () {
     return (
