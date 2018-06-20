@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './commons/Header';
 import 'react-vis/dist/style.css';
-import { XYPlot,LineSeries,VerticalBarSeries,XAxis,YAxis, VerticalGridLines, HorizontalGridLines
+import { XYPlot,VerticalBarSeries,XAxis,YAxis, VerticalGridLines, HorizontalGridLines,Hint
   } from 'react-vis';
   const data = [
     {x: 0, y: 8},
@@ -18,18 +18,27 @@ import { XYPlot,LineSeries,VerticalBarSeries,XAxis,YAxis, VerticalGridLines, Hor
   
 
 class LineGraph extends Component {
+  state = {
+    value: false
+  }
   render () {
+    const {value} = this.state;
     return (
       <div>
         <Header/>
-        <XYPlot height={300} width={500} >
+        <XYPlot height={300} width={500} color= "orange" stroke="black" >
         <VerticalGridLines />
           <HorizontalGridLines />
           <XAxis />
           <YAxis />
-  <VerticalBarSeries data={data} />
+  <VerticalBarSeries data={data} 
+  onValueMouseOver={v => this.setState({value: v})}
+  onSeriesMouseOut={v => this.setState({value: false})}/>
+  
+        {value && <Hint value={value}/>}
 </XYPlot>
-
+<h3 class="head-custom">BarGragh:</h3>
+<p class="para-custom">Bar series come in two flavors, HorizontalBarSeries and VerticalBarSeries</p>
       </div>
     )
   }
