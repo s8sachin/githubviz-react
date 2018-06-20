@@ -31,7 +31,7 @@ class Header extends Component {
             <NavItem eventKey={1} href='/piecharts'>
               Link Right
             </NavItem>
-            <NavItem eventKey={2} href="#">
+            <NavItem eventKey={2} href='/simplegraph'>
               Link Right
             </NavItem>
           </Nav>

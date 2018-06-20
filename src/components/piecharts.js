@@ -9,9 +9,7 @@ class  Piecharts extends Component {
       <div>
         <Header/>
         <Radialcharts/>
-        <h1>Pie chart</h1>
-        <p>A pie graph (or pie chart) is a specialized graph used in statistics. </p>
-          <p>The independent variable is plotted around a circle in either a clockwise direction or a counterclockwise direction.</p>
+
         <ClockExample/>
       </div>
     )
@@ -47,6 +45,11 @@ class Radialcharts extends Component {
                 {value && <Hint value={value} />}
               </RadialChart>
             </Col>
+          </Row>
+          <Row className="show-grid">
+          <h1 className="head-custom">Pie chart</h1>
+          <p>A pie graph (or pie chart) is a specialized graph used in statistics. </p>
+          <p>The independent variable is plotted around a circle in either a clockwise direction or a counterclockwise direction.</p>
           </Row>
         </Grid>
       </div>
@@ -100,6 +103,4 @@ function getSeconds() {
     );
   }
 }
-
-
 export default  Piecharts;
