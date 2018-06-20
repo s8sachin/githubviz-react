@@ -9,7 +9,7 @@ import reducers from './reducers';
 import { createStore, applyMiddleware } from 'redux';
 import './index.css';
 import App from './App';
-import AllGraphs from './components/AllGraphs';
+import  PieCharts from './components/piecharts';
 
 const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
 
@@ -18,7 +18,7 @@ ReactDOM.render((
     <Router history={browserHistory}>
       <Switch>
         <Route exact path="/" component={App}/>
-        <Route exact path="/allGraphs" component={AllGraphs}/>
+        <Route exact path="/piecharts" component={PieCharts}/>
       </Switch>
     </Router>
   </Provider>

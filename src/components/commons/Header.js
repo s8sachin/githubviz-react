@@ -28,7 +28,7 @@ class Header extends Component {
             </NavDropdown>
           </Nav>
           <Nav pullRight>
-            <NavItem eventKey={1} href="#">
+            <NavItem eventKey={1} href='/piecharts'>
               Link Right
             </NavItem>
             <NavItem eventKey={2} href="#">
