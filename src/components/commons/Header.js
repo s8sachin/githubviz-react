@@ -29,7 +29,7 @@ class Header extends Component {
           </Nav>
           <Nav pullRight>
             <NavItem eventKey={1} href='/piecharts'>
-              Link Right
+             Pie chart
             </NavItem>
             <NavItem eventKey={2} href='/simplegraph'>
               Link Right

@@ -9,7 +9,6 @@ class  Piecharts extends Component {
       <div>
         <Header/>
         <Radialcharts/>
-
         <ClockExample/>
       </div>
     )
@@ -36,7 +35,8 @@ class Radialcharts extends Component {
                   { theta: 6 },
                   { theta: 2 },
                   { theta: 3 },
-                  { theta: 1 }
+                  { theta: 11 },
+                  { theta: 10 }
                 ]}
                 onValueMouseOver={v => this.setState({ value: v })}
                 onSeriesMouseOut={v => this.setState({ value: false })}
@@ -60,9 +60,9 @@ const PI = Math.PI;
 function getSeconds() {
   return Math.floor((new Date()).getTime() / 1000);
 }
- class ClockExample extends React.Component {
+ class ClockExample extends Component {
   state = {
-    time: 0
+   time: 0
   }
 
   componentDidMount() {
@@ -97,8 +97,7 @@ function getSeconds() {
             {time: seconds / 60 * 2 * PI, radius0: 1, radius: 1.5, color: 0},
             {time: minutes / 60 * 2 * PI, radius0: 1.6, radius: 2.1, color: 1},
             {time: hours / 24 * 2 * PI, radius0: 2.2, radius: 2.7, color: 2}
-          ]}
-          />
+          ]}/>
       </XYPlot>
     );
   }
