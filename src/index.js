@@ -7,19 +7,32 @@ import browserHistory from './history';
 import registerServiceWorker from './registerServiceWorker';
 import reducers from './reducers';
 import { createStore, applyMiddleware } from 'redux';
+import Auth from './Auth';
 import './index.css';
 import App from './App';
 import LineGraph from './components/LineGraph';
+import AllGraphs from './components/AllGraphs';
+import Callback from './components/Callback';
 
 const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
-
+const auth = new Auth();
+const handleAuthentication = ({location}) => {
+  console.log('index.js')
+  if (/access_token|id_token|error/.test(location.hash)) {
+    auth.handleAuthentication();
+  }
+}
 ReactDOM.render((
   <Provider store={store}>
     <Router history={browserHistory}>
       <Switch>
         <Route exact path="/" component={App}/>
         <Route exact path="/lineGraph" component={LineGraph}/>
-        
+        <Route exact path="/allGraphs" component={AllGraphs}/>
+        <Route exact path="/callback" render={(props) => {
+          handleAuthentication(props);
+          return <Callback {...props}/>
+        }}/>
       </Switch>
     </Router>
   </Provider>
