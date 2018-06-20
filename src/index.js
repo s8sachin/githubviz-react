@@ -10,6 +10,8 @@ import { createStore, applyMiddleware } from 'redux';
 import Auth from './Auth';
 import './index.css';
 import App from './App';
+import PieCharts from './components/piecharts';
+import Simplegraph from './components/simplegraph';
 import LineGraph from './components/LineGraph';
 import AllGraphs from './components/AllGraphs';
 import Callback from './components/Callback';
@@ -27,6 +29,8 @@ ReactDOM.render((
     <Router history={browserHistory}>
       <Switch>
         <Route exact path="/" component={App}/>
+        <Route exact path="/piecharts" component={PieCharts}/>
+        <Route exact path="/simplegraph" component={Simplegraph}/>
         <Route exact path="/lineGraph" component={LineGraph}/>
         <Route exact path="/allGraphs" component={AllGraphs}/>
         <Route exact path="/callback" render={(props) => {
