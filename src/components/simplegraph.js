@@ -1,70 +1,41 @@
-// import React, { Component } from 'react';
-// import Header from './commons/Header';
-// import { XYPlot,XAxis,YAxis, VerticalGridLines, HorizontalGridLines } from 'react-vis';
-// const data = [
-//     {x: 0, y: 8},
-//     {x: 1, y: 5},
-//     {x: 2, y: 4},
-//     {x: 3, y: 9},
-//     {x: 4, y: 1},
-//     {x: 5, y: 7},
-//     {x: 6, y: 6},
-//     {x: 7, y: 3},
-//     {x: 8, y: 2},
-//     {x: 9, y: 0}
-//   ];
-  
 
-// class Simplegraph extends Component {
-//   render() {
-   
-//     return (
-//         <div>
-//       <Header/>
-//       <XYPlot height={300} width={500} color= "orange" stroke="black" >
-//       <VerticalGridLines />
-//         <HorizontalGridLines />
-//         <XAxis />
-//         <YAxis />
-//         </XYPlot>
-//         </div>
-//     );
-//   }
-// }
-
-// export default Simplegraph;
 import React, { Component } from 'react';
 import Header from './commons/Header';
 import 'react-vis/dist/style.css';
-import { XYPlot,LineSeries,VerticalBarSeries,XAxis,YAxis, VerticalGridLines, HorizontalGridLines
+import { XYPlot,LineMarkSeries,XAxis,YAxis, VerticalGridLines, HorizontalGridLines,Hint
   } from 'react-vis';
   const data = [
-    {x: 0, y: 8},
-    {x: 1, y: 5},
-    {x: 2, y: 4},
-    {x: 3, y: 9},
-    {x: 4, y: 1},
-    {x: 5, y: 7},
-    {x: 6, y: 6},
-    {x: 7, y: 3},
-    {x: 8, y: 2},
-    {x: 9, y: 0}
+    {x: "repo1", y: "c1"},
+    {x: "repo2", y: "c2"},
+    {x: "repo3", y: "c3"},
+    {x: "repo4", y: "c4"},
+    {x: "repo5", y: "c5"},
+    {x: "repo6", y: "c6"},
+    {x:"repo7", y: "c7"},
   ];
   
 
 class LineGraph extends Component {
-  render () {
+    state = {
+        value: false
+      }
+    render () {
+        const { value } = this.state;
     return (
       <div>
         <Header/>
-        <XYPlot height={300} width={500} color= "pink" stroke="black" >
+        <XYPlot height={300} width={500} color= "pink" stroke="black" xType="ordinal" yType="ordinal">
         <VerticalGridLines />
           <HorizontalGridLines />
           <XAxis />
           <YAxis />
-  <LineSeries  data={data} />
-</XYPlot>
-
+            {/* <LineSeries  data={data} /> */}
+            <LineMarkSeries data={data}
+            onValueMouseOver={v => this.setState({ value: v })}
+                onSeriesMouseOut={v => this.setState({ value: false })}/>
+                {value && <Hint value={value} />}
+            </XYPlot>
+            <h1 className="head-custom">Line Graph</h1>
       </div>
     )
   }
