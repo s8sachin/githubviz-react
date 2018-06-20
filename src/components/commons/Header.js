@@ -30,7 +30,7 @@ class Header extends Component {
           </Nav>
           <Nav pullRight>
             <NavItem eventKey={1} href='#'>
-              Line Gragh
+              Link Left
             </NavItem>
             <NavItem eventKey={2} href='/lineGraph'>
               Link Right
