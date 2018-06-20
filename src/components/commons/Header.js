@@ -5,6 +5,7 @@ class Header extends Component {
   render () {
     return (
       <Navbar inverse collapseOnSelect>
+      
         <Navbar.Header>
           <Navbar.Brand>
             <a href="#brand">React-Bootstrap</a>
@@ -20,7 +21,7 @@ class Header extends Component {
               Link
             </NavItem>
             <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-              <MenuItem eventKey={3.1}>Action</MenuItem>
+              <MenuItem eventKey={3.1}></MenuItem>
               <MenuItem eventKey={3.2}>Another action</MenuItem>
               <MenuItem eventKey={3.3}>Something else here</MenuItem>
               <MenuItem divider />
@@ -28,11 +29,11 @@ class Header extends Component {
             </NavDropdown>
           </Nav>
           <Nav pullRight>
-            <NavItem eventKey={1} href="#">
-              Link Right
+            <NavItem eventKey={1} href='#'>
+              Link Left
             </NavItem>
-            <NavItem eventKey={2} href="#">
-              Link Right
+            <NavItem eventKey={2} href='/lineGraph'>
+              Line Gragh
             </NavItem>
           </Nav>
         </Navbar.Collapse>

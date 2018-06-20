@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import ReduxThunk from 'redux-thunk';
-import { Route, Router, Switch, Redirect } from 'react-router-dom';
+import { Route, Router, Switch } from 'react-router-dom';
 import browserHistory from './history';
 import registerServiceWorker from './registerServiceWorker';
 import reducers from './reducers';
@@ -10,6 +10,7 @@ import { createStore, applyMiddleware } from 'redux';
 import Auth from './Auth';
 import './index.css';
 import App from './App';
+import LineGraph from './components/LineGraph';
 import AllGraphs from './components/AllGraphs';
 import Callback from './components/Callback';
 
@@ -26,6 +27,7 @@ ReactDOM.render((
     <Router history={browserHistory}>
       <Switch>
         <Route exact path="/" component={App}/>
+        <Route exact path="/lineGraph" component={LineGraph}/>
         <Route exact path="/allGraphs" component={AllGraphs}/>
         <Route exact path="/callback" render={(props) => {
           handleAuthentication(props);
