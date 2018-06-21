@@ -12,6 +12,7 @@ const headers = () => {
 export const getReposAndCommits = (params) => {
   return axios({
     method:'get',
-    url:`${ROOT_URL}/reposAndCommits`
+    url:`${ROOT_URL}/reposAndCommits`,
+    headers: headers()
   })
 }

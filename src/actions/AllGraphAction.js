@@ -5,9 +5,9 @@ export const repoAndCommitsAction = (status) => {
   return (dispatch) => {
     getReposAndCommits()
     .then(response => {
-      const repoNCommits = 'repoNCommits'
+      const repos_and_commits = 'repos_and_commits'
       const data = response.data.repoNCommits;
-      dispatch({type: REPO_AND_COMMITS, payload: {repoNCommits: data}})
+      dispatch({type: REPO_AND_COMMITS, payload: {repos_and_commits, data}})
     })
     .catch(er => console.log(er))
   }

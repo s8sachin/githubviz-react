@@ -7,7 +7,7 @@ const INITIAL_STATE = {
 export default (state = INITIAL_STATE, action) => {
   switch(action.type){
     case REPO_AND_COMMITS: 
-      return {...state, [action.payload.repos_and_commits]:action.payload.repos_and_commits};
+      return {...state, [action.payload.repos_and_commits]:action.payload.data};
     default :
       return state;
   }
