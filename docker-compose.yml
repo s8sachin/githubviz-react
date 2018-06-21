@@ -1,0 +1,14 @@
+version: "2"
+services:
+  api:
+    image: githubviz-node:latest
+    ports:
+      - 8000:8000
+    command: npm start
+  web:
+    image: githubviz-react:v1
+    ports:
+      - 3000:3000
+    command: serve -s build -l 3000
+    links:
+      - api
