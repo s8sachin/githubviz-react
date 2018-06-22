@@ -1,18 +1,17 @@
-import React, {Component} from 'react';
-import {XYPlot, XAxis, YAxis, VerticalBarSeries, VerticalGridLines, HorizontalGridLines, Hint} from 'react-vis';
+import React, { Component } from 'react';
+import { XYPlot, XAxis, YAxis, VerticalBarSeries, VerticalGridLines, HorizontalGridLines, Hint } from 'react-vis';
 import { connect } from 'react-redux';
-import{Grid,Row,Col} from 'react-bootstrap';
 
 class RepoNCommits extends Component {
-  constructor () {
+  constructor() {
     super();
   }
-  componentWillMount () {
-    this.setState({mouseOverValue: false})
+  componentWillMount() {
+    this.setState({ mouseOverValue: false })
   }
-  render(){
+  render() {
     return (
-        <XYPlot height={300} width={1280} color="orange" stroke="black" xType="ordinal" >
+      <XYPlot height={300} width={1000} color="orange" stroke="black" xType="ordinal">
         {/* <VerticalGridLines /> */}
         <HorizontalGridLines />
         <XAxis tickLabelAngle={-45} />
@@ -22,7 +21,6 @@ class RepoNCommits extends Component {
           onSeriesMouseOut={v => this.setState({ mouseOverValue: false })} />
         {this.state.mouseOverValue && <Hint value={this.state.mouseOverValue} />}
       </XYPlot>
-     
     )
   }
 }
@@ -32,4 +30,4 @@ const mapStateToProps = (state) => {
   return { repos_and_commits };
 }
 
-export default connect(mapStateToProps) (RepoNCommits);
+export default connect(mapStateToProps)(RepoNCommits);
