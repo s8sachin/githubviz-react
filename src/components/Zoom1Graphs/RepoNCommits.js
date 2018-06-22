@@ -15,10 +15,10 @@ class RepoNCommits extends Component {
       <Grid>
         <Row className="show-grid">
           <Col xs={12} md={12}>
-      <XYPlot height={300} width={1280} color="orange" stroke="black" xType="ordinal">
+      <XYPlot height={300} width={1280} color="orange" stroke="black" xType="ordinal" >
         {/* <VerticalGridLines /> */}
         <HorizontalGridLines />
-        <XAxis tickLabelAngle={-45}/>
+        <XAxis tickLabelAngle={-45} />
         <YAxis />
         <VerticalBarSeries data={this.props.repos_and_commits}
           onValueMouseOver={v => this.setState({ mouseOverValue: v })}
@@ -26,7 +26,16 @@ class RepoNCommits extends Component {
         {this.state.mouseOverValue && <Hint value={this.state.mouseOverValue} />}
       </XYPlot>
       </Col>
-      
+      </Row>
+      <Row className="show-grid">
+      <Col xs={12} md={12}>
+      <h3>Gragh Second lies in this row</h3>
+      </Col>
+      </Row>
+      <Row className="show-grid">
+      <Col xs={12} md={12}>
+      <h3>Gragh third lies in this row</h3>
+      </Col>
       </Row>
       </Grid>
     )
