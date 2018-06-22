@@ -33,3 +33,22 @@
   font-size:16px;
   color:grey;
 }
+.overflow{
+
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+}
+.margin-fix{
+  margin-top:20px;
+}
+.color-fix{
+  color:grey;
+  margin-top:2px;
+  /* border-bottom:1px solid grey; */
+  /* width:250px; */
+}
+.border-fix{
+  border-bottom:1px solid rgb(209, 209, 209);
+  margin-top:20px !important;
+  
+}
