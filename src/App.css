@@ -33,3 +33,6 @@
   font-size:16px;
   color:grey;
 }
+.overflow{
+  overflow-x: hidden;
+}

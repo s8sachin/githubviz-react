@@ -12,7 +12,7 @@ class RepoNCommits extends Component {
   }
   render(){
     return (
-      <Grid>
+      <Grid className="overflow">
         <Row className="show-grid">
           <Col xs={12} md={12}>
           <XYPlot height={300} width={1280} color="orange" stroke="black" xType="ordinal" >
@@ -30,7 +30,7 @@ class RepoNCommits extends Component {
       <Row className="show-grid">
       <Col xs={12} md={12}>
       <h3>Gragh Second lies in this row</h3>
-      </Col>
+     </Col>
       </Row>
       <Row className="show-grid">
       <Col xs={12} md={12}>
