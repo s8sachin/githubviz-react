@@ -24,14 +24,14 @@ class AllGraphs extends Component {
         <Grid className="overflow">
         <Row className="show-grid">
         <Col xs={12} md={12}>
-        <h3 className="color-fix">BarGragh:</h3>
+        <h3 className="color-fix">RepositoryAndCommits:</h3>
         <RepoNCommits/>
         </Col>
         </Row>
         <div className="border-fix"></div>
         <Row className="show-grid">
         <Col xs={12} md={4}>
-        <h3 className="color-fix">PieChart:</h3>
+        <h3 className="color-fix">MembersAndPullrequest:</h3>
         </Col>
         <Col xs={12} md={4} className="margin-fix">
         <UsersNPrs/>
