@@ -12,10 +12,7 @@ class RepoNCommits extends Component {
   }
   render(){
     return (
-      <Grid className="overflow">
-        <Row className="show-grid">
-          <Col xs={12} md={12}>
-          <XYPlot height={300} width={1280} color="orange" stroke="black" xType="ordinal" >
+        <XYPlot height={300} width={1280} color="orange" stroke="black" xType="ordinal" >
         {/* <VerticalGridLines /> */}
         <HorizontalGridLines />
         <XAxis tickLabelAngle={-45} />
@@ -25,19 +22,7 @@ class RepoNCommits extends Component {
           onSeriesMouseOut={v => this.setState({ mouseOverValue: false })} />
         {this.state.mouseOverValue && <Hint value={this.state.mouseOverValue} />}
       </XYPlot>
-      </Col>
-      </Row>
-      <Row className="show-grid">
-      <Col xs={12} md={12}>
-      <h3>Gragh Second lies in this row</h3>
-     </Col>
-      </Row>
-      <Row className="show-grid">
-      <Col xs={12} md={12}>
-      <h3>Gragh third lies in this row</h3>
-      </Col>
-      </Row>
-      </Grid>
+     
     )
   }
 }

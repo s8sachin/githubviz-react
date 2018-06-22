@@ -34,5 +34,9 @@
   color:grey;
 }
 .overflow{
+
   overflow-x: hidden;
+}
+.margin-fix{
+  margin-top:20px;
 }

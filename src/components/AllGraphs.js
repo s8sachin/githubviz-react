@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import RepoNCommits from './Zoom1Graphs/RepoNCommits';
 import UsersNPrs from './Zoom1Graphs/UsersNPrs';
 import { repoAndCommitsAction, usersAndPRAction } from '../actions/AllGraphAction';
-
+import{Grid,Row,Col} from 'react-bootstrap';
 class AllGraphs extends Component {
 
   componentWillMount () {
@@ -21,8 +21,20 @@ class AllGraphs extends Component {
     return (
       <div>
         <Header/>
+        <Grid className="overflow">
+        <Row className="show-grid">
+        <Col xs={12} md={12}>
         <RepoNCommits/>
+        </Col>
+        </Row>
+        <Row className="show-grid">
+        <Col xs={12} md={4}></Col>
+        <Col xs={12} md={4} className="margin-fix">
         <UsersNPrs/>
+        </Col>
+        <Col xs={12} md={4}></Col>
+        </Row>
+        </Grid>
       </div>
     )
   }
