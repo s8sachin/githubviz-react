@@ -15,7 +15,7 @@ class RepoNCommits extends Component {
       <Grid>
         <Row className="show-grid">
           <Col xs={12} md={12}>
-      <XYPlot height={300} width={1280} color="orange" stroke="black" xType="ordinal" >
+          <XYPlot height={300} width={1280} color="orange" stroke="black" xType="ordinal" >
         {/* <VerticalGridLines /> */}
         <HorizontalGridLines />
         <XAxis tickLabelAngle={-45} />
@@ -43,7 +43,7 @@ class RepoNCommits extends Component {
 }
 
 const mapStateToProps = (state) => {
-  const { repos_and_commits } = state.repoNCommits;
+  const { repos_and_commits } = state.zoom1;
   return { repos_and_commits };
 }
 
