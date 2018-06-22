@@ -35,10 +35,10 @@ class LineGraph extends Component {
                 {value && <Hint value={value} />}
             </XYPlot>
             <h1 className="head-custom">Line Graph</h1>
-      </div>
-    )
+        </div>
+      )
+   }
   }
-}
 
 
 export default LineGraph;
