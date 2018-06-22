@@ -24,3 +24,11 @@ export const getUsersAndPullreq = (params) => {
     headers: headers()
   })
 }
+
+export const getTeamsNMembersNPrs = (params) => {
+  return axios({
+    method:'get',
+    url:`${ROOT_URL}/teamsNMembersNPrs`,
+    headers: headers()
+  })
+}
