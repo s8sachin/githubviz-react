@@ -26,7 +26,7 @@ class RepoNCommits extends Component {
 }
 
 const mapStateToProps = (state) => {
-  const { repos_and_commits } = state.repoNCommits;
+  const { repos_and_commits } = state.zoom1;
   return { repos_and_commits };
 }
 

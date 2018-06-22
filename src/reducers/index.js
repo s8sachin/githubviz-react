@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import repoNCommitReducer from './repoNCommitReducer';
+import zoom1Reducer from './zoom1Reducer';
 export default combineReducers({
-  repoNCommits: repoNCommitReducer
+  zoom1: zoom1Reducer
 })
