@@ -16,19 +16,23 @@ class  Piecharts extends Component {
 }
 class Radialcharts extends Component {
   state = {
-    value: false
+    value: false,
+    value1:false
   }
   render () {
     const { value } = this.state;
+    const { value1} = this.state;
     return (
       <div>
         <Grid>
           <Row className="show-grid">
+          <h1 className="head-custom">Pie chart</h1>
             <Col xs={12} md={6}>
+            
               <RadialChart
                 className={'donut-chart-example'}
-                innerRadius={100}
-                radius={140}
+                innerRadius={120}
+                radius={170}
                 getAngle={d => d.theta}
                 data={[
                   { theta: 2, className: 'custom-class' },
@@ -40,14 +44,34 @@ class Radialcharts extends Component {
                 ]}
                 onValueMouseOver={v => this.setState({ value: v })}
                 onSeriesMouseOut={v => this.setState({ value: false })}
-                width={300}
-                height={300}>
+                width={400}
+                height={400}>
                 {value && <Hint value={value} />}
+              </RadialChart>
+            </Col>
+            <Col xs={12} md={6}>
+              <RadialChart
+                className={'donut-chart-example'}
+                radius={200}
+                getAngle={d => d.theta}
+                data={[
+                  { theta: 10, label:'Repo1'},
+                  { theta: 11,label:'Repo2'},
+                  { theta: 12,label:'Repo3'},
+                  { theta: 13,label:'Repo4'},
+                  { theta: 14,label:'Repo5'},
+                  { theta: 15,label:'Repo6'}
+                ]}
+                showLabels
+                onValueMouseOver={v => this.setState({ value1: v })}
+                onSeriesMouseOut={v => this.setState({ value1: false })}
+                width={450}
+                height={450}>
+                {value1 && <Hint value={value1} />}
               </RadialChart>
             </Col>
           </Row>
           <Row className="show-grid">
-          <h1 className="head-custom">Pie chart</h1>
           <p>A pie graph (or pie chart) is a specialized graph used in statistics. </p>
           <p>The independent variable is plotted around a circle in either a clockwise direction or a counterclockwise direction.</p>
           </Row>
@@ -88,10 +112,6 @@ function getSeconds() {
         getAngle0={d => 0}
         height={300}>
         <ArcSeries
-          animation={{
-            damping: 9,
-            stiffness: 300
-          }}
           radiusDomain={[0, 3]}
           data={[
             {time: seconds / 60 * 2 * PI, radius0: 1, radius: 1.5, color: 0},
