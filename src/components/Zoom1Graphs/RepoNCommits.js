@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {XYPlot, XAxis, YAxis, VerticalBarSeries, VerticalGridLines, HorizontalGridLines, Hint} from 'react-vis';
 import { connect } from 'react-redux';
+import{Grid,Row,Col} from 'react-bootstrap';
 
 class RepoNCommits extends Component {
   constructor () {
@@ -11,6 +12,9 @@ class RepoNCommits extends Component {
   }
   render(){
     return (
+      <Grid>
+        <Row className="show-grid">
+          <Col xs={12} md={12}>
       <XYPlot height={300} width={1280} color="orange" stroke="black" xType="ordinal">
         {/* <VerticalGridLines /> */}
         <HorizontalGridLines />
@@ -21,6 +25,10 @@ class RepoNCommits extends Component {
           onSeriesMouseOut={v => this.setState({ mouseOverValue: false })} />
         {this.state.mouseOverValue && <Hint value={this.state.mouseOverValue} />}
       </XYPlot>
+      </Col>
+      
+      </Row>
+      </Grid>
     )
   }
 }
