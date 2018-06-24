@@ -20,7 +20,6 @@ import Callback from './components/Callback';
 const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
 const auth = new Auth();
 const handleAuthentication = ({location}) => {
-  console.log('index.js')
   if (/access_token|id_token|error/.test(location.hash)) {
     auth.handleAuthentication();
   }

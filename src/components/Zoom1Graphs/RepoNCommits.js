@@ -1,33 +1,56 @@
-import React, {Component} from 'react';
-import {XYPlot, XAxis, YAxis, VerticalBarSeries, VerticalGridLines, HorizontalGridLines, Hint} from 'react-vis';
+import React, { Component } from 'react';
+import { XYPlot, XAxis, YAxis, VerticalBarSeries, VerticalGridLines, HorizontalGridLines, Hint } from 'react-vis';
 import { connect } from 'react-redux';
 
+const lodingGraphData = [
+  {x: 0, y: 8},
+  {x: 1, y: 5},
+  {x: 2, y: 4},
+  {x: 3, y: 9},
+  {x: 1, y: 5},
+  {x: 2, y: 4},
+  {x: 3, y: 9},
+  {x: 4, y: 1},
+  {x: 5, y: 7},
+  {x: 6, y: 6},
+  {x: 7, y: 3},
+  {x: 8, y: 2},
+  {x: 9, y: 0}
+];
 class RepoNCommits extends Component {
-  constructor () {
+  constructor() {
     super();
   }
-  componentWillMount () {
-    this.setState({mouseOverValue: false})
+  componentWillMount() {
+    this.setState({ mouseOverValue: false })
   }
-  render(){
+  render() {
+    var graphData = this.props.repos_and_commits[0] ? this.props.repos_and_commits : lodingGraphData;
     return (
-      <XYPlot height={300} width={1280} color="orange" stroke="black" xType="ordinal">
-        {/* <VerticalGridLines /> */}
-        <HorizontalGridLines />
-        <XAxis tickLabelAngle={-45}/>
-        <YAxis />
-        <VerticalBarSeries data={this.props.repos_and_commits}
-          onValueMouseOver={v => this.setState({ mouseOverValue: v })}
-          onSeriesMouseOut={v => this.setState({ mouseOverValue: false })} />
-        {this.state.mouseOverValue && <Hint value={this.state.mouseOverValue} />}
-      </XYPlot>
+      <div>
+        <XYPlot height={300} width={1000} color="orange" stroke="black" xType="ordinal" className={this.props.repos_and_commits[0] ? '' : 'loadingGraphOpacity'}>
+          <HorizontalGridLines />
+          <XAxis tickLabelAngle={-45} />
+          <YAxis />
+          <VerticalBarSeries data={graphData}
+            onValueMouseOver={v => this.setState({ mouseOverValue: v })}
+            onSeriesMouseOut={v => this.setState({ mouseOverValue: false })} />
+          {this.props.repos_and_commits[0] && this.state.mouseOverValue && 
+            <Hint value={this.state.mouseOverValue}>
+              <div className='hintStyle'>
+                <p>{this.state.mouseOverValue.x} :<br/>{this.state.mouseOverValue.y}</p>
+              </div>
+            </Hint>
+          }
+        </XYPlot>
+      </div>
     )
   }
 }
 
 const mapStateToProps = (state) => {
-  const { repos_and_commits } = state.repoNCommits;
+  const { repos_and_commits } = state.zoom1;
   return { repos_and_commits };
 }
 
-export default connect(mapStateToProps) (RepoNCommits);
+export default connect(mapStateToProps)(RepoNCommits);

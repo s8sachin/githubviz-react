@@ -16,3 +16,19 @@ export const getReposAndCommits = (params) => {
     headers: headers()
   })
 }
+
+export const getUsersAndPullreq = (params) => {
+  return axios({
+    method:'get',
+    url:`${ROOT_URL}/usersAndPullreq`,
+    headers: headers()
+  })
+}
+
+export const getTeamsNMembersNPrs = (params) => {
+  return axios({
+    method:'get',
+    url:`${ROOT_URL}/teamsNMembersNPrs`,
+    headers: headers()
+  })
+}
