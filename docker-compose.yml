@@ -1,14 +1,18 @@
 version: "2"
 services:
   api:
-    image: githubviz-node:latest
+    image: 571780515387.dkr.ecr.us-west-2.amazonaws.com/gitviz-poc:node-v1
+    mem_limit: 224288000
+    cpu_shares: 100
     ports:
       - 8000:8000
     command: npm start
   web:
-    image: githubviz-react:v1
+    image: 571780515387.dkr.ecr.us-west-2.amazonaws.com/gitviz-poc:react-v1
+    mem_limit: 224288000
+    cpu_shares: 100
     ports:
-      - 3000:3000
-    command: serve -s build -l 3000
+      - 80:80
+    command: serve -s build -l 80
     links:
       - api
