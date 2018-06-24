@@ -7,7 +7,6 @@ import { Grid, Row, Col } from 'react-bootstrap';
 import TeamsNMembersNPrs from './Zoom1Graphs/TeamsNMembersNPrs';
 import { repoAndCommitsAction, usersAndPRAction, teamsNMembersNPrsAction } from '../actions/AllGraphAction';
 
-
 class AllGraphs extends Component {
 
   componentWillMount() {
@@ -26,25 +25,25 @@ class AllGraphs extends Component {
         <Grid className="overflow">
           <Row className="show-grid">
             <Col xs={12} md={12}>
-              <h3 className="color-fix">Repositories and Commits:</h3>
-              <center><RepoNCommits /></center>
+              <h3 className="graph-heading">Repositories and Commits:</h3>
+            <center><RepoNCommits /></center>
             </Col>
           </Row>
-          <div className="border-fix"></div>
+          <div className="border-bottom"></div>
           <Row className="show-grid">
+            {/* <Col xs={12} md={4}>
+            </Col> */}
+            {/* <Col xs={12} md={12} className="margin-fix"> */}
+              <h3 className="graph-heading">Users and Pullrequests:</h3>
+            <center><UsersNPrs/></center>
+            {/* </Col>
             <Col xs={12} md={4}>
-              <h3 className="color-fix">Users and Pullrequests:</h3>
-            </Col>
-            <Col xs={12} md={4} className="margin-fix">
-            <center><UsersNPrs /></center>
-            </Col>
-            <Col xs={12} md={4}>
-            </Col>
+            </Col> */}
           </Row>
-          <div className="border-fix"></div>
+          <div className="border-bottom"></div>
           <Row className="show-grid">
             <Col xs={12} md={12} className="margin-fix">
-              <h3 className="color-fix">Team and Pull Requests:</h3><br/>
+              <h3 className="graph-heading">Team and Pull Requests:</h3><br/>
               <center><TeamsNMembersNPrs /></center>
             </Col>
           </Row>
@@ -55,8 +54,8 @@ class AllGraphs extends Component {
 }
 
 const mapStateToProps = (state) => {
-  const { repos_and_commits, users_and_prs } = state.zoom1;
-  return { repos_and_commits, users_and_prs };
+  const { repos_and_commits, users_and_prs, teams_and_members_and_prs } = state.zoom1;
+  return { repos_and_commits, users_and_prs, teams_and_members_and_prs };
 }
 
 export default connect(mapStateToProps, { repoAndCommitsAction, usersAndPRAction, teamsNMembersNPrsAction })(AllGraphs);
