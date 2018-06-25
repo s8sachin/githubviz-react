@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Grid, Jumbotron, Button } from 'react-bootstrap';
-import browserHistory from '../history';
 import Header from './commons/Header';
-import auth0 from 'auth0-js';
 import Auth from '../Auth';
 class Root extends Component {
 
@@ -10,6 +8,8 @@ class Root extends Component {
     const auth = new Auth();
     auth.login();
   }
+
+  userLoggedIn = (localStorage.getItem('access_token') && localStorage.getItem('email')) ? true : false;
 
   render() {
     return (
@@ -24,8 +24,7 @@ class Root extends Component {
               extra attention to featured content or information.
             </p>
             <p>
-              <Button bsStyle="primary" onClick={() => browserHistory.push('/allGraphs')}>All Graphs</Button>
-              <Button bsStyle="primary" onClick={() => this.auth0login()}>Login</Button>
+              {!this.userLoggedIn && <Button bsStyle="primary" onClick={() => this.auth0login()}>Login</Button>}
             </p>
           </Jumbotron>
         </Grid>

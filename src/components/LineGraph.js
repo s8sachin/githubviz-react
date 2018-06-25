@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Header from './commons/Header';
-import 'react-vis/dist/style.css';
 import { XYPlot,VerticalBarSeries,XAxis,YAxis, VerticalGridLines, HorizontalGridLines,Hint,LineMarkSeries
   } from 'react-vis';
   import { Grid, Row,Col} from 'react-bootstrap';

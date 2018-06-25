@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Header from './commons/Header';
 import { Grid,Row,Col} from 'react-bootstrap';
 import { RadialChart,Hint,XYPlot,ArcSeries} from 'react-vis';
-import 'react-vis/dist/style.css';
 class  Piecharts extends Component {
   render () {
     return (
@@ -28,24 +27,35 @@ class Radialcharts extends Component {
           <Row className="show-grid">
           <h1 className="head-custom">Pie chart</h1>
             <Col xs={12} md={6}>
+<<<<<<< HEAD
             
               <RadialChart
                 className={'donut-chart-example'}
                 innerRadius={120}
                 radius={170}
+=======
+              <RadialChart stroke="black"
+                radius={200}
+>>>>>>> 30a47403076bfa76a86b0afbd9af7146d671544c
                 getAngle={d => d.theta}
                 data={[
-                  { theta: 2, className: 'custom-class' },
-                  { theta: 6 },
-                  { theta: 2 },
-                  { theta: 3 },
-                  { theta: 11 },
-                  { theta: 10 }
+                  { theta: 2, label: 'Repo1'},
+                  { theta: 6,label: 'Repo2' },
+                  { theta: 2, label: 'Repo3' },
+                  { theta: 3 , label: 'Repo4'},
+                  { theta: 11, label: 'Repo5' },
+                  { theta: 10 , label: 'Repo6'}
                 ]}
+                showLabels
                 onValueMouseOver={v => this.setState({ value: v })}
                 onSeriesMouseOut={v => this.setState({ value: false })}
+<<<<<<< HEAD
                 width={400}
                 height={400}>
+=======
+                width={500}
+                height={500}>
+>>>>>>> 30a47403076bfa76a86b0afbd9af7146d671544c
                 {value && <Hint value={value} />}
               </RadialChart>
             </Col>
@@ -71,6 +81,7 @@ class Radialcharts extends Component {
               </RadialChart>
             </Col>
           </Row>
+         
           <Row className="show-grid">
           <p>A pie graph (or pie chart) is a specialized graph used in statistics. </p>
           <p>The independent variable is plotted around a circle in either a clockwise direction or a counterclockwise direction.</p>

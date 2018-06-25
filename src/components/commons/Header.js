@@ -1,22 +1,43 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, MenuItem, NavDropdown, Button } from 'react-bootstrap';
+import browserHistory from '../../history';
 
 class Header extends Component {
+
+  state = {
+    userLoggedIn: false
+  }
+  
+  componentWillMount () {
+    this.setState({userLoggedIn: this.authenticate()})
+  }
+
+  authenticate () {
+    return (localStorage.getItem('access_token') && localStorage.getItem('email')) ? true : false;
+  }
+
+  logout () {
+    localStorage.removeItem('access_token');
+    localStorage.removeItem('email');
+    this.setState({userLoggedIn: false});
+    browserHistory.push('/');
+  }
+
   render () {
     return (
       <Navbar inverse collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#brand">React-Bootstrap</a>
+            <a href='#' onClick={() => browserHistory.push('/')}>Github Viz</a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav>
-            <NavItem eventKey={1} href="#">
-              Link
-            </NavItem>
-            <NavItem eventKey={2} href="#">
+            {this.state.userLoggedIn && <NavItem eventKey={1} href="#">
+              <Button bsSize='xsmall' bsStyle="primary" onClick={() => browserHistory.push('/allGraphs')}>All Graphs</Button>
+            </NavItem>}
+            {/* <NavItem eventKey={2} href="#">
               Link
             </NavItem>
             <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
@@ -25,15 +46,18 @@ class Header extends Component {
               <MenuItem eventKey={3.3}>Something else here</MenuItem>
               <MenuItem divider />
               <MenuItem eventKey={3.3}>Separated link</MenuItem>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
           <Nav pullRight>
-            <NavItem eventKey={1} href='/piecharts'>
+            <NavItem eventKey={1} onClick={() => browserHistory.push('/piecharts')}>
              Pie chart
             </NavItem>
-            <NavItem eventKey={2} href='/lineGraph'>
+            <NavItem eventKey={2} onClick={() => browserHistory.push('/lineGraph')}>
               Line Gragh
             </NavItem>
+            {this.state.userLoggedIn && <NavItem eventKey={2}>
+              <Button bsSize='xsmall' bsStyle="primary" onClick={() => this.logout()}>Logout</Button>
+            </NavItem>}
           </Nav>
         </Navbar.Collapse>
       </Navbar>

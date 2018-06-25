@@ -1,7 +1,6 @@
 
 import React, { Component } from 'react';
 import Header from './commons/Header';
-import 'react-vis/dist/style.css';
 import { XYPlot,LineMarkSeries,XAxis,YAxis, VerticalGridLines, HorizontalGridLines,Hint
   } from 'react-vis';
   const data = [
@@ -36,10 +35,10 @@ class LineGraph extends Component {
                 {value && <Hint value={value} />}
             </XYPlot>
             <h1 className="head-custom">Line Graph</h1>
-      </div>
-    )
+        </div>
+      )
+   }
   }
-}
 
 
 export default LineGraph;
