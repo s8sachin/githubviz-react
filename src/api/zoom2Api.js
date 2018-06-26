@@ -8,3 +8,10 @@ export const singleRepoNCommits = (params) => {
     headers: headers()
   })
 }
+export const  singleUserNCommits = (params) => {
+  return axios({
+    method: 'get',
+    url: `${ROOT_URL}/singleUserNCommits/${params}`,
+    headers: headers()
+  })
+}
