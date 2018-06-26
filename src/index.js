@@ -49,7 +49,7 @@ ReactDOM.render((
         <Route exact path="/callback" render={(props) => {
           handleAuthentication(props);
           return <Callback {...props}/>
-        }}/>
+         }}/>
       </Switch>
     </Router>
   </Provider>

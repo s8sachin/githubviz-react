@@ -4,11 +4,7 @@
   "private": true,
   "dependencies": {
     "auth0-js": "^9.6.1",
-<<<<<<< HEAD
-    "hapi": "^17.5.1",
-=======
     "axios": "^0.18.0",
->>>>>>> 30a47403076bfa76a86b0afbd9af7146d671544c
     "history": "^4.7.2",
     "react": "^16.4.1",
     "react-bootstrap": "^0.32.1",

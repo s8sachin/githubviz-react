@@ -27,16 +27,10 @@ class Radialcharts extends Component {
           <Row className="show-grid">
           <h1 className="head-custom">Pie chart</h1>
             <Col xs={12} md={6}>
-<<<<<<< HEAD
-            
-              <RadialChart
+              <RadialChart stroke="black"
                 className={'donut-chart-example'}
                 innerRadius={120}
                 radius={170}
-=======
-              <RadialChart stroke="black"
-                radius={200}
->>>>>>> 30a47403076bfa76a86b0afbd9af7146d671544c
                 getAngle={d => d.theta}
                 data={[
                   { theta: 2, label: 'Repo1'},
@@ -49,13 +43,9 @@ class Radialcharts extends Component {
                 showLabels
                 onValueMouseOver={v => this.setState({ value: v })}
                 onSeriesMouseOut={v => this.setState({ value: false })}
-<<<<<<< HEAD
-                width={400}
-                height={400}>
-=======
                 width={500}
                 height={500}>
->>>>>>> 30a47403076bfa76a86b0afbd9af7146d671544c
+
                 {value && <Hint value={value} />}
               </RadialChart>
             </Col>
@@ -81,8 +71,7 @@ class Radialcharts extends Component {
               </RadialChart>
             </Col>
           </Row>
-         
-          <Row className="show-grid">
+         <Row className="show-grid">
           <p>A pie graph (or pie chart) is a specialized graph used in statistics. </p>
           <p>The independent variable is plotted around a circle in either a clockwise direction or a counterclockwise direction.</p>
           </Row>
