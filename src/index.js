@@ -16,6 +16,7 @@ import Simplegraph from './components/simplegraph';
 import LineGraph from './components/LineGraph';
 import AllGraphs from './components/AllGraphs';
 import Callback from './components/Callback';
+import SingleRepoNCommits from './components/Zoom2Graphs/SingleRepoNCommits';
 
 const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
 const auth = new Auth();
@@ -50,6 +51,7 @@ ReactDOM.render((
           handleAuthentication(props);
           return <Callback {...props}/>
         }}/>
+        <PrivateRoute exact path="/singleRepoNCommits/:repo" component={SingleRepoNCommits}/>
       </Switch>
     </Router>
   </Provider>
