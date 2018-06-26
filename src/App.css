@@ -33,3 +33,44 @@
   font-size:16px;
   color:grey;
 }
+.overflow{
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+}
+.margin-20{
+  margin-top:20px;
+}
+.graph-heading{
+  color:grey;
+  margin-top:2px;
+  /* border-bottom:1px solid grey; */
+  /* width:250px; */
+}
+.border-bottom{
+  border-bottom:1px solid rgb(209, 209, 209);
+  margin-top:20px !important;
+}
+
+.loadingGraphOpacity{
+  opacity: 0.2;
+}
+
+.fullPageSpinner{
+  margin-top: 25%;
+}
+
+.fullPageSpinner.sk-cube-grid {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.hintStyle {
+  border-radius: 4px;
+  padding: 7px 7px 1px 7px;
+  font-size: 12px;
+  background: #3a3a48;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: left;
+  white-space: nowrap
+}
