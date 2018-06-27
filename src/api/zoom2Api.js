@@ -8,3 +8,11 @@ export const singleRepoNCommits = (params) => {
     headers: headers()
   })
 }
+
+export const teamAdditionsDeletions = (params) => {
+  return axios({
+    method: 'get',
+    url: `${ROOT_URL}/teamAdditionsDeletions/${params}`,
+    headers: headers()
+  })
+}
