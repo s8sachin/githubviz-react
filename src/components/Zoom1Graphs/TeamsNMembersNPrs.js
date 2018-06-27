@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { XYPlot, XAxis, YAxis, VerticalBarSeries, VerticalGridLines, HorizontalGridLines, Hint, LineMarkSeries, Crosshair, DiscreteColorLegend } from 'react-vis';
 import { connect } from 'react-redux';
+import browserHistory from '../../history';
 
 const loadingGraphData = [
   {name: "------", graphValues: [{x: '-----', y: 8}, {x: '----', y: 4}, {x: '------', y: 1}]}
@@ -13,6 +14,11 @@ class TeamsNMembersNPrs extends Component {
 
   componentWillMount() {
     this.setState({ mouseOverValue: false })
+  }
+
+  handleClick (value) {
+    console.log(value)
+    browserHistory.push(`/teamAdditionsDeletions/${value}`)
   }
 
   render() {
@@ -28,6 +34,7 @@ class TeamsNMembersNPrs extends Component {
             return element && <LineMarkSeries key={index} data={element.graphValues}
               onValueMouseOver={v => this.setState({ mouseOverValue: v })}
               onSeriesMouseOut={v => this.setState({ mouseOverValue: false })}
+              // onValueClick={ v => this.handleClick(v) }
             />
           }
         })
@@ -42,6 +49,7 @@ class TeamsNMembersNPrs extends Component {
         <DiscreteColorLegend
           orientation="horizontal"
           items={graphData && graphData.map(e => e.name)}
+          onItemClick={v => this.handleClick(v)}
         />
       </XYPlot>
     )
