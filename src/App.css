@@ -33,7 +33,7 @@
   font-size:16px;
   color:grey;
 }
-.overflow{
+.overflow1{
   overflow-x: hidden;
   /* overflow-y: hidden;  */
 }
@@ -78,11 +78,11 @@
   margin-left: 20px;
 }
 .backbtn{
-  margin-left: 20px;
-  margin-top: 25px !important;
+  margin-right: 212px;
+    margin-top: 4px !important;
 }
-h2{
+.graph-heading1{
+  margin-top:6px;
   color:grey;
-  margin-left:-207px;
-  margin-top: 23px;
+  margin-left: -187px;
 }
