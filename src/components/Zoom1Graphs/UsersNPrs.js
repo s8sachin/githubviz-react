@@ -31,7 +31,6 @@ class UsersNPrs extends Component {
     const label = v.label;
     browserHistory.push(`/singleUserNCommits/${label}`);
   }
-
   render () {
     var graphData = this.props.users_and_prs[0] ? this.props.users_and_prs : lodingGraphData;
     return (

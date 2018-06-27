@@ -33,9 +33,9 @@
   font-size:16px;
   color:grey;
 }
-.overflow{
-  /* overflow-x: hidden;
-  overflow-y: hidden; */
+.overflow1{
+  overflow-x: hidden;
+  /* overflow-y: hidden;  */
 }
 .margin-20{
   margin-top:20px;
@@ -73,6 +73,18 @@
   color: #fff;
   text-align: left;
   white-space: nowrap
+}
+.graphcenter{
+  margin-left: 20px;
+}
+.backbtn{
+  margin-right: 212px;
+    margin-top: 4px !important;
+}
+.graph-heading1{
+  margin-top:6px;
+  color:grey;
+  margin-left: -187px;
 }
 
 .zIndex100 {
