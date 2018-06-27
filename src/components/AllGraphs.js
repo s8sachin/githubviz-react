@@ -10,14 +10,11 @@ import { repoAndCommitsAction, usersAndPRAction, teamsNMembersNPrsAction } from 
 class AllGraphs extends Component {
 
   componentWillMount() {
-    this.props.repoAndCommitsAction();
-    this.props.usersAndPRAction();
+    this.props.repoAndCommitsAction({repoCount: 20});
+    this.props.usersAndPRAction({usersCount: 20});
     this.props.teamsNMembersNPrsAction();
   }
-
-  handleData(response) {
-    this.setState({ data: response.data.repoNCommits })
-  }
+  
   render() {
     return (
       <div>
@@ -26,7 +23,7 @@ class AllGraphs extends Component {
           <Row className="show-grid">
             <Col xs={12} md={12}>
               <h3 className="graph-heading">Repositories and Commits:</h3>
-            <center><RepoNCommits /></center>
+              <center><RepoNCommits repoCount={20}/></center>
             </Col>
           </Row>
           <div className="border-bottom"></div>
@@ -35,7 +32,7 @@ class AllGraphs extends Component {
             </Col> */}
             {/* <Col xs={12} md={12} className="margin-fix"> */}
               <h3 className="graph-heading">Users and Pullrequests:</h3>
-            <center><UsersNPrs/></center>
+            <center><UsersNPrs usersCount={20}/></center>
             {/* </Col>
             <Col xs={12} md={4}>
             </Col> */}
