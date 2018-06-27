@@ -3,7 +3,7 @@ import { getReposAndCommits, getUsersAndPullreq, getTeamsNMembersNPrs } from '..
 
 export const repoAndCommitsAction = (status) => {
   return (dispatch) => {
-    getReposAndCommits()
+    getReposAndCommits(status)
     .then(response => {
       const repos_and_commits = 'repos_and_commits'
       const data = response.data.repoNCommits;
@@ -15,7 +15,7 @@ export const repoAndCommitsAction = (status) => {
 
 export const usersAndPRAction = (status) => {
   return (dispatch) => {
-    getUsersAndPullreq()
+    getUsersAndPullreq(status)
     .then(response => {
       const users_and_prs = 'users_and_prs'
       const data = response.data.usersAndPullreq;
