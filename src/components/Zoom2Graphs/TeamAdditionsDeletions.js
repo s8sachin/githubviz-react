@@ -21,18 +21,18 @@ class TeamAdditionsDeletions extends Component {
         <Header/>
       <div style={{'paddingLeft': '50px'}}>
       <Grid>
-      <Row className="show-grid">
+       <Row className="show-grid">
          <Col xs={12} md={2}>
-         <Button className="butn-top" bsStyle="primary" onClick={() => browserHistory.push('/AllGraphs')}>Back</Button>
+          <Button className="butn-top" bsStyle="primary" onClick={() => browserHistory.push('/AllGraphs')}>Back</Button>
          </Col>
          <Col xs={12} md={6}>
-         <h4 className="header-color1">Team Members Additions and deletions from recent 10 PRs</h4>
+          <h4 className="header-color1">Team Members Additions and deletions from recent 10 PRs</h4>
          </Col>
          <Col xs={12} md={4}></Col>
          </Row>
          <Row className="show-grid">
-         <Col className="margin-row" xs={12} md={12}>
-        <XYPlot
+            <Col className="margin-row" xs={12} md={12}>
+              <XYPlot
           xType="ordinal"
           width={1000}
           height={500}
@@ -56,8 +56,8 @@ class TeamAdditionsDeletions extends Component {
               </div>
             </Hint>
           }
-        </XYPlot>
-        </Col>
+          </XYPlot>
+         </Col>
         </Row>
         </Grid>
       </div>
