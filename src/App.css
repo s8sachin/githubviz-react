@@ -74,3 +74,22 @@
   text-align: left;
   white-space: nowrap
 }
+.header-color{
+  color:grey;
+  margin-left: -127px;
+  margin-top: 20px;
+}
+.butn-top{
+  margin-top:13px;
+}
+.gragh-top{
+  margin-top:40px;
+}
+.margin-row{
+  margin-top:40px;
+}
+.header-color1{
+  margin-top: 21px;
+    font-size: 21px;
+    color:grey;
+}
