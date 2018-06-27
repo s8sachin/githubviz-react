@@ -74,3 +74,20 @@
   text-align: left;
   white-space: nowrap
 }
+
+.zIndex100 {
+  z-index: 100;
+}
+
+.marginRight30 {
+  margin-right: 30px;
+}
+
+/* bar graph x axis label to avoid cutting off */
+.rv-xy-plot__inner_380 .rv-xy-plot__inner {
+  height: 380px !important;
+}
+
+.rv-xy-plot__inner_380 {
+  height: auto !important;
+}
