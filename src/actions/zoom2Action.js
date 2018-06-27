@@ -3,10 +3,12 @@ import { SINGLE_REPO_COMMITS, SINGLE_USERN_COMMITS, TEAM_ADDITIONS_DELETIONS } f
 
 export const singleRepoNCommitsAction = (status) => {
   return (dispatch) => {
+    const single_repo_commits = 'single_repo_commits';
+    var data = [];
+    dispatch({type: SINGLE_REPO_COMMITS, payload: {single_repo_commits, data}});
     singleRepoNCommits(status)
     .then(response => {
-      const single_repo_commits = 'single_repo_commits'
-      const data = response.data.singleRepoNCommits;
+      data = response.data.singleRepoNCommits;
       dispatch({type: SINGLE_REPO_COMMITS, payload: {single_repo_commits, data}})
     })
     .catch(er => console.log(er))
@@ -15,11 +17,12 @@ export const singleRepoNCommitsAction = (status) => {
 
 export const teamAdditionsDeletionsAction = (status) => {
   return (dispatch) => {
+    const team_additons_deletions = 'team_additons_deletions';
+    var data = [];
+    dispatch({type: TEAM_ADDITIONS_DELETIONS, payload: {team_additons_deletions, data}});
     teamAdditionsDeletions(status)
     .then(response => {
-      console.log(response)
-      const team_additons_deletions = 'team_additons_deletions'
-      const data = response.data.teamAdditionsDeletions;
+      data = response.data.teamAdditionsDeletions;
       dispatch({type: TEAM_ADDITIONS_DELETIONS, payload: {team_additons_deletions, data}})
     })
     .catch(er => console.log(er))
@@ -28,11 +31,12 @@ export const teamAdditionsDeletionsAction = (status) => {
 
 export const  singleUserNCommitsAction = (status) => {
   return (dispatch) => {
-    console.log(status)
+    const single_usern_commits = 'single_usern_commits';
+    var data = [];
+    dispatch({type: SINGLE_USERN_COMMITS, payload: {single_usern_commits, data}});
     singleUserNCommits(status)
     .then(response => {
-      const single_usern_commits = 'single_usern_commits'
-      const data = response.data.singleUserNCommits;
+      data = response.data.singleUserNCommits;
       dispatch({type: SINGLE_USERN_COMMITS, payload: {single_usern_commits, data}})
     })
     .catch(er => console.log(er))
