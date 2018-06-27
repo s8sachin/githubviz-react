@@ -76,11 +76,18 @@
 }
 .header-color{
   color:grey;
-  border-bottom:1px solid grey;
 }
 .butn-top{
   margin-top:13px;
 }
 .gragh-top{
   margin-top:40px;
+}
+.margin-row{
+  margin-top:40px;
+}
+.header-color1{
+  margin-top: 21px;
+    font-size: 21px;
+    color:grey;
 }
