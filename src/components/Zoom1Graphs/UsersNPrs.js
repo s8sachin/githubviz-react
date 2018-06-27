@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { RadialChart, Hint, DiscreteColorLegend } from 'react-vis';
 import { connect } from 'react-redux';
-import { USERS_AND_PRS } from '../../actions/type';
 import { Col } from 'react-bootstrap';
 import browserHistory from '../../history';
 
@@ -14,10 +13,6 @@ const lodingGraphData = [
 ];
 
 class UsersNPrs extends Component {
-
-  constructor () {
-    super();
-  }
 
   componentWillMount () {
     this.setState({mouseOverValue: false})
