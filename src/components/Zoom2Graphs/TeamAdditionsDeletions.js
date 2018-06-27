@@ -33,10 +33,10 @@ class TeamAdditionsDeletions extends Component {
          <Row className="show-grid">
             <Col className="margin-row" xs={12} md={12}>
               <XYPlot
-          xType="ordinal"
-          width={1000}
-          height={500}
-          xDistance={100}>
+                xType="ordinal"
+                width={1000}
+                height={500}
+                xDistance={100}>
           <VerticalGridLines />
           <HorizontalGridLines />
           <XAxis />
