@@ -55,11 +55,7 @@ class RepoNCommits extends Component {
         </div><br/>
         <XYPlot height={300} width={1000} color="orange" stroke="black" xType="ordinal" className={this.props.repos_and_commits[0] ? 'rv-xy-plot__inner_380' : 'loadingGraphOpacity rv-xy-plot__inner_380'}>
           <HorizontalGridLines />
-<<<<<<< HEAD
-          <XAxis tickLabelAngle={-45} title="X" />
-=======
           <XAxis tickLabelAngle={-45}/>
->>>>>>> master
           <YAxis />
           <VerticalBarSeries data={graphData}
             onValueClick={v => this.singleRepoNCommits(v)}
