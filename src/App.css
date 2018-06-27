@@ -86,3 +86,40 @@
   color:grey;
   margin-left: -187px;
 }
+
+.zIndex100 {
+  z-index: 100;
+}
+
+.marginRight30 {
+  margin-right: 30px;
+}
+
+/* bar graph x axis label to avoid cutting off */
+.rv-xy-plot__inner_380 .rv-xy-plot__inner {
+  height: 380px !important;
+}
+
+.rv-xy-plot__inner_380 {
+  height: auto !important;
+}
+
+.header-color{
+  color:grey;
+  margin-left: -127px;
+  margin-top: 20px;
+}
+.butn-top{
+  margin-top:13px;
+}
+.gragh-top{
+  margin-top:40px;
+}
+.margin-row{
+  margin-top:40px;
+}
+.header-color1{
+  margin-top: 21px;
+  font-size: 21px;
+  color:grey;
+}
