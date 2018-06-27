@@ -76,6 +76,8 @@
 }
 .header-color{
   color:grey;
+  margin-left: -127px;
+  margin-top: 20px;
 }
 .butn-top{
   margin-top:13px;
