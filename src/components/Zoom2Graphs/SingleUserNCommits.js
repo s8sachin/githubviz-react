@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { RadialChart, Hint, DiscreteColorLegend } from 'react-vis';
-import { Col }   from 'react-bootstrap';
+import { Col,Grid,Row,Button }   from 'react-bootstrap';
 import { singleUserNCommitsAction } from '../../actions/zoom2Action';
+import Header from '../commons/Header';
+import browserHistory from '../../history';
 
 const lodingGraphData = [
     {theta: 2, label: '-----------'},
@@ -20,7 +22,20 @@ const lodingGraphData = [
     render () {
       var graphData = this.props.single_usern_commits[0] ? this.props.single_usern_commits : lodingGraphData;
       return (
+        <div>
+           <Header/>
         <div className={this.props.single_usern_commits[0] ? '' : 'loadingGraphOpacity'}>
+         <Grid>
+         <Row className="show-grid">
+         <Col xs={12} md={4}>
+         <Button className="butn-top" bsStyle="primary" onClick={() => browserHistory.push('/AllGraphs')}>Back</Button>
+         </Col>
+         <Col xs={12} md={4}>
+         <h2 className="header-color">Single User and Commits:</h2>
+         </Col>
+         <Col xs={12} md={4}></Col>
+         </Row>
+        <center className="gragh-top"> <Row className="show-grid">
           <Col xs={6} md={6}>
             <RadialChart
               className='donut-chart-hover'
@@ -51,6 +66,9 @@ const lodingGraphData = [
               items={graphData.map(e => e.label)}
             />
           </Col>
+          </Row></center>
+          </Grid>
+        </div>
         </div>
       )
     }
