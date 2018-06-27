@@ -39,40 +39,38 @@ class SingleRepoNCommits extends Component {
     return (
         <div className="overflow">
           <Header />
-       <center> <Grid>
-           <Row className="show-grid">
-            <Col xs={12} md={2}>
-              <Button bsStyle="primary" className="backbtn" onClick={this.back}>Back</Button>
-            </Col>
-            <Col xs={12} md={10}>
-              <h2>{this.state.repoName} branches and commits</h2>
-            </Col>
-          </Row>
-          <Row className="show-grid">
-          
-          <Col md={12}>
-          
-          <XYPlot height={500} width={1200} color="#25939a" stroke="#25939a" xType="ordinal" className={this.props.single_repo_commits[0] ? '' : 'loadingGraphOpacity'}>
-            <HorizontalGridLines />
-            <XAxis tickLabelAngle={-45} title="Branches"/>
-            <YAxis title="Commits" />
-            <LineMarkSeries data={graphData}
-            onValueMouseOver={v => this.setState({ mouseOverValue: v })}
-              onSeriesMouseOut={v => this.setState({ mouseOverValue: false })} />
-              {this.state.mouseOverValue &&
-                <Hint value={this.state.mouseOverValue}>
-                  <div className='hintStyle'>
-                    <p>{this.state.mouseOverValue.x} :<br />{this.state.mouseOverValue.y}</p>
-                  </div>
-                </Hint>
-              } 
-          </XYPlot><br/>
-        
-        </Col>
-      </Row>
-      </Grid>
-      </center>
-    </div>
+           <center> 
+            <Grid>
+              <Row className="show-grid">
+                <Col xs={12} md={2}>
+                  <Button bsStyle="primary" className="backbtn" onClick={this.back}>Back</Button>
+                </Col>
+                <Col xs={12} md={10}>
+                <h2>{this.state.repoName} branches and commits</h2>
+                </Col>
+              </Row>
+              <Row className="show-grid">
+                <Col md={12}>
+                  <XYPlot height={500} width={1200} color="#25939a" stroke="#25939a" xType="ordinal" className={this.props.single_repo_commits[0] ? '' : 'loadingGraphOpacity'}>
+                    <HorizontalGridLines />
+                    <XAxis tickLabelAngle={-45} title="Branches"/>
+                    <YAxis title="Commits" />
+                    <LineMarkSeries data={graphData}
+                    onValueMouseOver={v => this.setState({ mouseOverValue: v })}
+                      onSeriesMouseOut={v => this.setState({ mouseOverValue: false })} />
+                      {this.state.mouseOverValue &&
+                        <Hint value={this.state.mouseOverValue}>
+                          <div className='hintStyle'>
+                            <p>{this.state.mouseOverValue.x} :<br />{this.state.mouseOverValue.y}</p>
+                          </div>
+                        </Hint>
+                      } 
+                  </XYPlot>
+                </Col>
+              </Row>
+            </Grid>
+          </center>
+      </div>
    )
   }
 }
