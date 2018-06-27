@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { RadialChart, Hint, DiscreteColorLegend } from 'react-vis';
 import { connect } from 'react-redux';
 import { Col } from 'react-bootstrap';
+import browserHistory from '../../history';
 
 const lodingGraphData = [
   {theta: 2, label: '-----------'},
@@ -16,6 +17,11 @@ class UsersNPrs extends Component {
   componentWillMount () {
     this.setState({mouseOverValue: false})
   }
+  singleUserNCommits = (v) => {
+    const label = v.label;
+    browserHistory.push(`/singleUserNCommits/${label}`);
+  }
+
 
   render () {
     var graphData = this.props.users_and_prs[0] ? this.props.users_and_prs : lodingGraphData;
@@ -28,6 +34,7 @@ class UsersNPrs extends Component {
             radius={140}
             getAngle={d => d.theta}
             data={graphData}
+            onValueClick={v => this.singleUserNCommits(v)}
             onValueMouseOver={v => this.setState({mouseOverValue: v})}
             onSeriesMouseOut={v => this.setState({mouseOverValue: false})}
             width={300}
