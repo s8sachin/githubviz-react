@@ -29,10 +29,10 @@ const lodingGraphData = [
          <Grid>
          <Row className="show-grid">
          <Col xs={12} md={4}>
-         <Button className="butn-top" bsStyle="primary" onClick={() => browserHistory.push('/AllGraphs')}>Back</Button>
+          <Button className="butn-top" bsStyle="primary" onClick={() => browserHistory.push('/AllGraphs')}>Back</Button>
          </Col>
          <Col xs={12} md={8}>
-         <h2 className="header-color">User: {this.state.user} Pull Requests and commits:</h2>
+           <h2 className="header-color">User: {this.state.user} Pull Requests and commits:</h2>
          </Col>
          </Row>
         <center className="gragh-top"> <Row className="show-grid">
