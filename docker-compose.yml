@@ -1,14 +1,14 @@
 version: "2"
 services:
   api:
-    image: 571780515387.dkr.ecr.us-west-2.amazonaws.com/gitviz-poc:node-v1
+    image: 571780515387.dkr.ecr.us-west-2.amazonaws.com/gitviz-poc:node-v2
     mem_limit: 224288000
     cpu_shares: 100
     ports:
       - 8000:8000
     command: npm start
   web:
-    image: 571780515387.dkr.ecr.us-west-2.amazonaws.com/gitviz-poc:react-v1
+    image: 571780515387.dkr.ecr.us-west-2.amazonaws.com/gitviz-poc:react-v2
     mem_limit: 224288000
     cpu_shares: 100
     ports:
