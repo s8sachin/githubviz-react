@@ -35,7 +35,7 @@
 }
 .overflow1{
   overflow-x: hidden;
-  /* overflow-y: hidden;  */
+  overflow-y: hidden; 
 }
 .margin-20{
   margin-top:20px;
@@ -98,6 +98,10 @@
 /* bar graph x axis label to avoid cutting off */
 .rv-xy-plot__inner_380 .rv-xy-plot__inner {
   height: 380px !important;
+}
+
+.rv-xy-plot__inner_500 .rv-xy-plot__inner {
+  height: 500px !important;
 }
 
 .rv-xy-plot__inner_380 {
