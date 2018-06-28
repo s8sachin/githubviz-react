@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import { RadialChart, Hint, DiscreteColorLegend } from 'react-vis';
 import { connect } from 'react-redux';
-import { USERS_AND_PRS } from '../../actions/type';
-import { Col } from 'react-bootstrap';
+import { Col, DropdownButton, MenuItem, Tooltip } from 'react-bootstrap';
+import browserHistory from '../../history';
+import { usersAndPRAction } from '../../actions/AllGraphAction';
 
 const lodingGraphData = [
   {theta: 2, label: '-----------'},
@@ -12,20 +13,36 @@ const lodingGraphData = [
   {theta: 1, label: '-----------'}
 ];
 
-class UsersNPrs extends Component {
+const usersCounts = [20, 40, 60, 80, 100]
 
-  constructor () {
-    super();
-  }
+class UsersNPrs extends Component {
 
   componentWillMount () {
     this.setState({mouseOverValue: false})
+    this.setState({ mouseOverValue: false, usersCount: this.props.usersCount })
   }
 
+  changeNumberOfUsers (count) {
+    this.props.usersAndPRAction({usersCount: count})
+    this.setState({usersCount: count})
+  }
+
+  singleUserNCommits = (v) => {
+    const label = v.label;
+    browserHistory.push(`/singleUserNCommits/${label}`);
+  }
   render () {
     var graphData = this.props.users_and_prs[0] ? this.props.users_and_prs : lodingGraphData;
     return (
       <div className={this.props.users_and_prs[0] ? '' : 'loadingGraphOpacity'}>
+        <div className='pull-right zIndex100'>
+          <span className='marginRight30'><b>Users Selected: {this.state.usersCount}</b></span>
+          <DropdownButton title='Users Count' id='g1Dropdown' onSelect={v => this.changeNumberOfUsers(v)}>
+            {usersCounts.map((count, index) => {
+              return <MenuItem key={index} active={this.state.usersCount === count} eventKey={count}>{count}</MenuItem>
+            })}
+          </DropdownButton>
+        </div><br/>
         <Col xs={6} md={6}>
           <RadialChart
             className='donut-chart-hover'
@@ -33,6 +50,7 @@ class UsersNPrs extends Component {
             radius={140}
             getAngle={d => d.theta}
             data={graphData}
+            onValueClick={v => this.singleUserNCommits(v)}
             onValueMouseOver={v => this.setState({mouseOverValue: v})}
             onSeriesMouseOut={v => this.setState({mouseOverValue: false})}
             width={300}
@@ -65,4 +83,4 @@ const mapStateToProps = (state) => {
   return { users_and_prs };
 }
 
-export default connect(mapStateToProps) (UsersNPrs);
+export default connect(mapStateToProps, { usersAndPRAction }) (UsersNPrs);
