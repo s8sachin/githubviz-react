@@ -23,7 +23,7 @@ class AllGraphs extends Component {
           <Row className="show-grid">
             <Col xs={12} md={12}>
               <h3 className="graph-heading">Repositories and Commits:</h3>
-              <center><RepoNCommits repoCount={20}/></center>
+              <center><RepoNCommits repoCount={20} graph='Vertical Bar Graph'/></center>
             </Col>
           </Row>
           <div className="border-bottom"></div>
