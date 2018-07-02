@@ -10,6 +10,7 @@ import { createStore, applyMiddleware } from 'redux';
 import Auth from './Auth';
 import 'react-vis/dist/style.css';
 import './index.css';
+
 import App from './App';
 import PieCharts from './components/piecharts';
 import Simplegraph from './components/simplegraph';
@@ -19,6 +20,7 @@ import Callback from './components/Callback';
 import SingleRepoNCommits from './components/Zoom2Graphs/SingleRepoNCommits';
 import TeamAdditionsDeletions from './components/Zoom2Graphs/TeamAdditionsDeletions';
 import SingleUserNCommits from './components/Zoom2Graphs/SingleUserNCommits';
+import CustomGoogleMap from './components/Maps/CustomGoogleMap';
 
 const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
 const auth = new Auth();
@@ -48,6 +50,7 @@ ReactDOM.render((
         <Route exact path="/piecharts" component={PieCharts}/>
         <Route exact path="/simplegraph" component={Simplegraph}/>
         <Route exact path="/lineGraph" component={LineGraph}/>
+        <Route exact path="/googleMap" component={CustomGoogleMap}/>
         <PrivateRoute exact path="/allGraphs" component={AllGraphs}/>
         <Route exact path="/callback" render={(props) => {
           handleAuthentication(props);
