@@ -5,7 +5,6 @@ import { Col, Grid, Row, Button, Glyphicon }   from 'react-bootstrap';
 import { singleUserNCommitsAction } from '../../actions/zoom2Action';
 import Header from '../commons/Header';
 import browserHistory from '../../history';
-
 const lodingGraphData = [
     {theta: 2, label: '-----------'},
     {theta: 6, label: '-----------'},
@@ -19,6 +18,10 @@ const lodingGraphData = [
       this.props.singleUserNCommitsAction(label);
       this.setState({ mouseOverValue: false });
       this.setState({ user: label });
+    }
+
+    handleClick (value) {
+      browserHistory.push(`/table2Data/${value.repo}/${value.label}`)
     }
     render () {
       var graphData = this.props.single_usern_commits[0] ? this.props.single_usern_commits : lodingGraphData;
@@ -44,7 +47,7 @@ const lodingGraphData = [
                       radius={140}
                       getAngle={d => d.theta}
                       data={graphData}
-                      // onValueClick={v => this.singleUserNCommits(v)}
+                      onValueClick={v => this.handleClick(v)}
                       onValueMouseOver={v => this.setState({mouseOverValue: v})}
                       onSeriesMouseOut={v => this.setState({mouseOverValue: false})}
                       width={300}
