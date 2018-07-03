@@ -18,6 +18,36 @@
   background-color: #f3f3f2;
 }
 
+.background-white {
+  background-color: white;
+}
+
+.widget-title{
+  padding: 50px;
+}
+
+.float-left{
+  float: left;
+}
+
+.padding-left-30pc{
+  padding-left: 30%;
+}
+
+.hr {
+  height:15px;
+  padding-bottom: 15px;
+  width: 5%;
+  float: left;
+}
+
+.line {
+  width: 100%;
+  float: left;
+  margin-top:13px;
+  border-bottom: 2px solid black;
+}
+
 .border-5{
   border: 12px solid white;
   border-radius: 5px;

@@ -143,8 +143,25 @@ class CustomGoogleMap extends Component {
             </div>
           </Row><br/>
           <Row>
-            <div className='border-5'>
-
+            <div className='background-white'>
+              <center><h3 className='widget-title'>Shipment ID: 121548</h3></center>
+              <div className='padding-left-30pc'>
+                <img src={circleGreen} className='float-left' style={{width: '35px'}}/>
+                <div className="hr"><div className="line"></div></div>
+                <img src={circleGreen} className='float-left' style={{width: '25px'}}/>
+                <div className="hr"><div className="line"></div></div>
+                <img src={circleGreen} className='float-left' style={{width: '25px'}}/>
+                <div className="hr"><div className="line"></div></div>
+                <img src={circleGreen} className='float-left' style={{width: '25px'}}/>
+                <div className="hr"><div className="line"></div></div>
+                <img src={circleGreen} className='float-left' style={{width: '25px'}}/>
+                <div className='hr'><div className='line'></div></div>
+                <img src={circleGreen} className='float-left' style={{width: '25px'}}/>
+                <div className='hr'><div className='line'></div></div>
+                <img src={circleGreen} className='float-left' style={{width: '25px'}}/>
+                <div className='hr'><div className='line'></div></div>
+                <img src={circleGreen} className='' style={{width: '35px'}}/>
+              </div>
             </div>
           </Row>
         </Grid>
