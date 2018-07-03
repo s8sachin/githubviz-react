@@ -18,16 +18,14 @@ class Table2Data extends Component {
           <Header/>
           <Grid>
             <Row className="show-grid">
-              <center>
-                <Col xs={12} md={3}>
+                <Col xs={12} md={2}>
                 <Button className="butn-top" bsStyle="primary" onClick={() => browserHistory.push('/singleUserNCommits/:label')}><Glyphicon glyph="chevron-left" /> Back</Button>
                 </Col>
-               <Col xs={12} md={9}>
-                <h4 className="header-color1">single user pullrequest and commits </h4>
+               <Col xs={12} md={10}>
+                <h4 className="header-color2">single user pullrequest and commits </h4>
                </Col>
-              </center>
             </Row>
-            <Row className="show-grid">
+            <Row className="show-grid table">
               <Col className="margin-row" xs={12} md={12}>
                 <Table striped bordered condensed hover>
                   <thead>
