@@ -13,7 +13,7 @@ class TableData extends Component {
       }
   render() {
     return (
-        <div>
+        <div className="table-custom">
         <Header/>
         <Grid>
           <Row>
