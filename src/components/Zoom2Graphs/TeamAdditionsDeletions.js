@@ -87,6 +87,7 @@ class TeamAdditionsDeletions extends Component {
           </Grid>
         </div>
       </div>
+
     )
   }
 }

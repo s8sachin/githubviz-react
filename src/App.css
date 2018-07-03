@@ -135,4 +135,11 @@
   margin-top: 21px;
   font-size: 21px;
   color:grey;
+
 }
+ .margin-top {
+  margin-bottom: 22px;
+ }
+ .table-custom{
+  overflow-x: hidden;
+ }
