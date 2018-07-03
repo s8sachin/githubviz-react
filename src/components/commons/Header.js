@@ -33,21 +33,30 @@ class Header extends Component {
           <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
-          <Nav>
-            {this.state.userLoggedIn && <NavItem eventKey={1} href="#">
-              <Button bsSize='xsmall' bsStyle="primary" onClick={() => browserHistory.push('/allGraphs')}>All Graphs</Button>
-            </NavItem>}
-            {/* <NavItem eventKey={2} href="#">
-              Link
-            </NavItem>
-            <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-              <MenuItem eventKey={3.1}></MenuItem>
-              <MenuItem eventKey={3.2}>Another action</MenuItem>
-              <MenuItem eventKey={3.3}>Something else here</MenuItem>
-              <MenuItem divider />
-              <MenuItem eventKey={3.3}>Separated link</MenuItem>
-            </NavDropdown> */}
-          </Nav>
+          {this.state.userLoggedIn && 
+            <div>
+              <Nav>
+                <NavItem eventKey={1} href="#">
+                  <Button bsSize='xsmall' bsStyle="primary" onClick={() => browserHistory.push('/allGraphs')}>All Graphs</Button>
+                </NavItem>
+              </Nav>
+              <Nav>
+                <NavItem eventKey={2} href="#">
+                  <Button bsSize='xsmall' bsStyle="primary" onClick={() => browserHistory.push('/googleMap')}>Google Map</Button>
+                </NavItem>
+                {/* <NavItem eventKey={2} href="#">
+                  Link
+                  </NavItem>
+                  <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+                  <MenuItem eventKey={3.1}></MenuItem>
+                  <MenuItem eventKey={3.2}>Another action</MenuItem>
+                  <MenuItem eventKey={3.3}>Something else here</MenuItem>
+                  <MenuItem divider />
+                  <MenuItem eventKey={3.3}>Separated link</MenuItem>
+                </NavDropdown> */}
+              </Nav>
+            </div>
+          }
           <Nav pullRight>
             <NavItem eventKey={1} onClick={() => browserHistory.push('/piecharts')}>
              Pie chart
