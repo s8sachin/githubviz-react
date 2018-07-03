@@ -34,20 +34,20 @@ class TableData extends Component {
                 <th>oid</th>
               </tr>
             </thead>
-         <tbody>
-        {this.props.table_data && this.props.table_data.map((obj, index) => {
-            return(<tr key={index}>
-              <td>{obj.committedDate}</td>
-              <td>{obj.message}</td>
-              <td>{obj.id}</td>
-          </tr>)
-        })}
+          <tbody>
+          {this.props.table_data && this.props.table_data.map((obj, index) => {
+              return(<tr key={index}>
+                <td>{obj.committedDate}</td>
+                <td>{obj.message}</td>
+                <td>{obj.id}</td>
+            </tr>)
+          })}
         </tbody>
-      </Table>
-      </Col>
-      </Row>
+         </Table>
+          </Col>
+          </Row>
       </Grid>
-      </div>
+     </div>
     );
   }
 }
