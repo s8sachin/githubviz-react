@@ -5,3 +5,4 @@ export const SINGLE_REPO_COMMITS = 'single_repo_commits';
 export const TEAM_ADDITIONS_DELETIONS = 'team_additons_deletions';
 export const SINGLE_USERN_COMMITS = 'single_usern_commits';
 export const TABLE2_DATA = 'table2_data';
+export const TABLE_DATA = 'table_data';

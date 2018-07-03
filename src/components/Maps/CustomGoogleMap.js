@@ -20,8 +20,11 @@ const markerLocations = [{lat: 21, lng:55, icon: circleGreen}, {lat: 12, lng: 76
 class CustomGoogleMap extends Component {
   state = {
     isMarkerShown: false,
-    mapHeight: '220px'
+    mapHeight: '220px',
+    zoom: 4
   }
+
+  
 
   StyledMapWithAnInfoBox = compose(
     // withProps({
@@ -46,9 +49,11 @@ class CustomGoogleMap extends Component {
   )(props =>
     <GoogleMap
       defaultZoom={4}
+      zoom={props.zoom}
       defaultCenter={props.center}
-      defaultOptions={{ styles: demoFancyMapStyles }}
+      defaultOptions={{ styles: demoFancyMapStyles, fullscreenControl: false, zoomControl: false, streetViewControl: false, mapTypeControl: false}}
     >
+    {console.log(props.zoom)}
       {/* <InfoBox
         defaultPosition={new google.maps.LatLng(props.center.lat, props.center.lng)}
         options={{ closeBoxURL: ``, enableEventPropagation: true }}
@@ -119,17 +124,29 @@ class CustomGoogleMap extends Component {
 
   render() {
     return (
-      <div>
+      <div className='background-grey'>
         <Header/>
-        <Grid bsClass='container-fluid'>
-        <Button className='pull-right' onClick={() => this.changeMapHeight()}><Glyphicon glyph="resize-full"/></Button><br/><br/>
-        <this.StyledMapWithAnInfoBox
-          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgz7WIqeyebRjMS1ngHxrwCGY1wLEMIvI&v=3.exp&libraries=geometry,drawing,places"
-          loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div style={{ height: this.state.mapHeight }} />}
-          mapElement={<div style={{ height: `100%` }} />}
-          center={{ lat: 15.2958, lng: 80.6394 }}
-        />
+        <Grid bsClass='container'>
+          <Row >
+            <Button className='pull-right' onClick={() => this.changeMapHeight()}><Glyphicon glyph="resize-full"/></Button>
+            <Button className='pull-right' onClick={() => this.setState({zoom: this.state.zoom - 1})}><Glyphicon glyph="minus"/></Button>
+            <Button className='pull-right' onClick={() => this.setState({zoom: this.state.zoom + 1})}><Glyphicon glyph="plus"/></Button><br/><br/>
+            <div className='border-5'>
+              <this.StyledMapWithAnInfoBox
+                googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgz7WIqeyebRjMS1ngHxrwCGY1wLEMIvI&v=3.exp&libraries=geometry,drawing,places"
+                loadingElement={<div style={{ height: `100%` }} />}
+                containerElement={<div style={{ height: this.state.mapHeight }} />}
+                mapElement={<div style={{ height: `100%` }} />}
+                center={{ lat: 15.2958, lng: 80.6394 }}
+                zoom={this.state.zoom}
+              />
+            </div>
+          </Row><br/>
+          <Row>
+            <div className='border-5'>
+
+            </div>
+          </Row>
         </Grid>
       </div>
     )

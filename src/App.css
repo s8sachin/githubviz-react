@@ -14,6 +14,15 @@
   color: white;
 }
 
+.background-grey {
+  background-color: #f3f3f2;
+}
+
+.border-5{
+  border: 12px solid white;
+  border-radius: 5px;
+}
+
 .App-title {
   font-size: 1.5em;
 }
@@ -126,6 +135,7 @@
   margin-top: 21px;
   font-size: 21px;
   color:grey;
+
 }
 .header-color2{
   margin-top: 21px;
@@ -133,3 +143,9 @@
   color: grey;
   margin-left: 105px;
 }
+ .margin-top {
+  margin-bottom: 22px;
+ }
+ .table-custom{
+  overflow-x: hidden;
+ }
