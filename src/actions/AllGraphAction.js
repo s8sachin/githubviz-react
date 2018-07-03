@@ -4,11 +4,13 @@ import { getReposAndCommits, getUsersAndPullreq, getTeamsNMembersNPrs } from '..
 export const repoAndCommitsAction = (status) => {
   return (dispatch) => {
     const repos_and_commits = 'repos_and_commits';
-    var data = [];
-    dispatch({type: REPO_AND_COMMITS, payload: {repos_and_commits, data}});
+    var data = {};
+    dispatch({type: REPO_AND_COMMITS, payload: {data}});
     getReposAndCommits(status)
     .then(response => {
-      data = response.data.repoNCommits;
+      var barGraphData = response.data.repoNCommits;
+      var pieChartData = barGraphData.map(obj => {return {theta: obj.y, label: obj.x}})
+      data = {barGraphData, pieChartData};
       dispatch({type: REPO_AND_COMMITS, payload: {repos_and_commits, data}})
     })
     .catch(er => console.log(er))
@@ -23,7 +25,7 @@ export const usersAndPRAction = (status) => {
     getUsersAndPullreq(status)
     .then(response => {
       data = response.data.usersAndPullreq;
-      dispatch({type: USERS_AND_PRS, payload: {users_and_prs, data}})
+      dispatch({type: USERS_AND_PRS, payload: {data}})
     })
     .catch(er => console.log(er))
   }

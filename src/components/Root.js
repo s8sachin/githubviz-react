@@ -15,7 +15,6 @@ class Root extends Component {
     return (
       <div>
         <Header/>
-        {console.log(process.env)}
         <Grid bsClass='container'>
           <Jumbotron>
             <h1>Hello, world!</h1>
