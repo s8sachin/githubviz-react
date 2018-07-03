@@ -6,5 +6,5 @@ import zoom3Reducer from './zoom3Reducer';
 export default combineReducers({
   zoom1: zoom1Reducer,
   zoom2: zoom2Reducer,
-  zoom3: zoom3Reducer
+  zoom3:zoom3Reducer
 })
