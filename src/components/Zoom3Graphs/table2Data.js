@@ -19,10 +19,10 @@ class Table2Data extends Component {
           <Grid>
             <Row className="show-grid">
               <center>
-                <Col xs={12} md={2}>
+                <Col xs={12} md={3}>
                 <Button className="butn-top" bsStyle="primary" onClick={() => browserHistory.push('/singleUserNCommits/:label')}><Glyphicon glyph="chevron-left" /> Back</Button>
                 </Col>
-               <Col xs={12} md={10}>
+               <Col xs={12} md={9}>
                 <h4 className="header-color1">single user pullrequest and commits </h4>
                </Col>
               </center>
