@@ -21,7 +21,7 @@ const lodingGraphData = [
       this.setState({ user: label });
     }
     render () {
-      var graphData = this.props.single_usern_commits[0] ? this.props.single_usern_commits : lodingGraphData;>
+      var graphData = this.props.single_usern_commits[0] ? this.props.single_usern_commits : lodingGraphData;
       return (
         <div>
           <Header/>

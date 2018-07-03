@@ -128,3 +128,9 @@
   color:grey;
 
 }
+ .margin-top {
+  margin-bottom: 22px;
+ }
+ .table-custom{
+  overflow-x: hidden;
+ }

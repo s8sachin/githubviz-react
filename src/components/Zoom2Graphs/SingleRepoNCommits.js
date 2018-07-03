@@ -29,8 +29,8 @@ class SingleRepoNCommits extends Component {
     this.setState({ repoName: repo, mouseOverValue: false });
     this.props.singleRepoNCommitsAction(repo);
   }
-  back () {
-    browserHistory.push(`/allGraphs`);
+  handleClick (value) {
+    browserHistory.push(`/tableData/${this.state.repoName}/${value.x}`)
   }
 
   render () {
@@ -55,6 +55,7 @@ class SingleRepoNCommits extends Component {
                   <XAxis tickLabelAngle={-45} title="Branches" />
                   <YAxis title="Commits" />
                   <LineMarkSeries data={graphData}
+                   onValueClick={v => this.handleClick(v)}
                     onValueMouseOver={v => this.setState({ mouseOverValue: v })}
                     onSeriesMouseOut={v => this.setState({ mouseOverValue: false })} />
                   {this.state.mouseOverValue &&
