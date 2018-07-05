@@ -42,7 +42,7 @@ class SingleRepoNCommits extends Component {
           <Grid>
             <Row className="show-grid">
               <Col xs={12} md={4}>
-                <Button bsStyle="primary" className="backbtn" onClick={() => this.back()}><Glyphicon glyph="chevron-left" /> Back</Button>
+                <Button bsStyle="primary" className="backbtn" onClick={() => browserHistory.push('/allGraphs')}><Glyphicon glyph="chevron-left" /> Back</Button>
               </Col>
               <Col xs={12} md={8}>
                 <h3 className='graph-heading1'>{this.state.repoName} branches and commits</h3>

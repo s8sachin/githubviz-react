@@ -6,7 +6,7 @@ import { Route, Router, Switch, Redirect } from 'react-router-dom';
 import browserHistory from './history';
 import registerServiceWorker from './registerServiceWorker';
 import reducers from './reducers';
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import Auth from './Auth';
 import 'react-vis/dist/style.css';
 import './index.css';
@@ -23,7 +23,8 @@ import Table2Data from './components/Zoom3Graphs/table2Data';
 import TableData from './components/Zoom3Graphs/tableData';
 import CustomGoogleMap from './components/Maps/CustomGoogleMap';
 
-const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(reducers, {}, composeEnhancers(applyMiddleware(ReduxThunk)));
 const auth = new Auth();
 const handleAuthentication = ({location}) => {
   if (/access_token|id_token|error/.test(location.hash)) {
