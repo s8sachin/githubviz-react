@@ -28,7 +28,7 @@ class Header extends Component {
       <Navbar inverse collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href='#' onClick={() => browserHistory.push('/')}>Github Viz</a>
+            <a href='#' id ="abc" onClick={() => browserHistory.push('/')}>Github Viz</a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
@@ -37,12 +37,12 @@ class Header extends Component {
             <div>
               <Nav>
                 <NavItem eventKey={1} href="#">
-                  <Button bsSize='xsmall' bsStyle="primary" onClick={() => browserHistory.push('/allGraphs')}>All Graphs</Button>
+                  <Button  bsSize='xsmall' bsStyle="primary" onClick={() => browserHistory.push('/allGraphs')}>All Graphs</Button>
                 </NavItem>
               </Nav>
               <Nav>
                 <NavItem eventKey={2} href="#">
-                  <Button bsSize='xsmall' bsStyle="primary" onClick={() => browserHistory.push('/googleMap')}>Google Map</Button>
+                  <Button  bsSize='xsmall' bsStyle="primary" onClick={() => browserHistory.push('/googleMap')}>Google Map</Button>
                 </NavItem>
                 {/* <NavItem eventKey={2} href="#">
                   Link
@@ -58,7 +58,7 @@ class Header extends Component {
             </div>
           }
           <Nav pullRight>
-            <NavItem eventKey={1} onClick={() => browserHistory.push('/piecharts')}>
+            <NavItem eventKey={1} id ="my_id" onClick={() => browserHistory.push('/piecharts')}>
              Pie chart
             </NavItem>
             <NavItem eventKey={2} onClick={() => browserHistory.push('/lineGraph')}>

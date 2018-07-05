@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should click create github viz link 1`] = `
+<div>
+  <Header />
+  <Grid
+    bsClass="container"
+    componentClass="div"
+    fluid={false}
+  >
+    <Jumbotron
+      bsClass="jumbotron"
+      componentClass="div"
+    >
+      <h1>
+        Hello, world!
+      </h1>
+      <p>
+        This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+      </p>
+      <p>
+        <Button
+          active={false}
+          block={false}
+          bsClass="btn"
+          bsStyle="primary"
+          disabled={false}
+          onClick={[Function]}
+        >
+          Login
+        </Button>
+      </p>
+    </Jumbotron>
+  </Grid>
+</div>
+`;
+
+exports[`Header should mount Header component 1`] = `
+<Uncontrolled(Navbar)
+  bsStyle="default"
+  collapseOnSelect={true}
+  inverse={true}
+>
+  <NavbarHeader>
+    <NavbarBrand>
+      <a
+        href="#"
+        id="abc"
+        onClick={[Function]}
+      >
+        Github Viz
+      </a>
+    </NavbarBrand>
+    <NavbarToggle />
+  </NavbarHeader>
+  <NavbarCollapse>
+    <Nav
+      bsClass="nav"
+      justified={false}
+      pullLeft={false}
+      pullRight={true}
+      stacked={false}
+    >
+      <NavItem
+        active={false}
+        disabled={false}
+        eventKey={1}
+        id="my_id"
+        onClick={[Function]}
+      >
+        Pie chart
+      </NavItem>
+      <NavItem
+        active={false}
+        disabled={false}
+        eventKey={2}
+        onClick={[Function]}
+      >
+        Line Gragh
+      </NavItem>
+    </Nav>
+  </NavbarCollapse>
+</Uncontrolled(Navbar)>
+`;

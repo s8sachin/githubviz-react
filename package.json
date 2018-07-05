@@ -5,9 +5,6 @@
   "dependencies": {
     "auth0-js": "^9.6.1",
     "axios": "^0.18.0",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "enzyme-to-json": "^3.3.4",
     "history": "^4.7.2",
     "react": "^16.4.1",
     "react-bootstrap": "^0.32.1",
@@ -17,7 +14,6 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
     "react-spinkit": "^3.0.0",
-    "react-test-renderer": "^16.4.1",
     "react-vis": "^1.9.4",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0"
@@ -27,5 +23,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "jest": "^23.3.0",
+    "react-test-renderer": "^16.4.1"
   }
 }

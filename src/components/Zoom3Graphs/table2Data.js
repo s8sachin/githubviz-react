@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import Header from '../commons/Header';
 import { Col, Grid, Row, Button, Glyphicon }   from 'react-bootstrap';
 import browserHistory from '../../history';
-
 class Table2Data extends Component {
     componentWillMount() {
         const repoName = this.props.match.params.repoName;
