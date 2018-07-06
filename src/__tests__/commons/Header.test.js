@@ -4,11 +4,12 @@ import { shallow, mount, render, configure } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import Adapter from 'enzyme-adapter-react-16';
 import renderer from 'react-test-renderer';
-import Header from '../components/commons/Header';
-import Root from '../components/Root';
-import LocalStorageMock from '../LocalStorageMock';
+import Header from '../../components/commons/Header';
+import Root from '../../components/Root';
+import LocalStorageMock from '../../LocalStorageMock';
 import { Link } from 'react-router';
-import PieCharts from '../components/piecharts';
+import PieCharts from '../../components/piecharts';
+import LineGraph from '../../components/LineGraph';
 
 global.localStorage = new LocalStorageMock;
 
@@ -25,37 +26,50 @@ it('should mount Header component', () => {
     // console.log(wrapper.instances());
     // expect(wrapper.instances().props.name).toBe('Header');
     // wrapper.find('abc').simulate('click');
-    const tag = wrapper.find('#abc')
+    const tag = wrapper.find('#gitviz')
     // console.log(tag.simulate('click'))
     const output= tag.simulate('click')
-    console.log(output)
-    console.log(tag)
-
     // const component = renderer.create(tag.props().onClick)
     const tree = shallow(<Root />)
     expect(toJson(tree)).toMatchSnapshot();
   })
 
-//   it("should click create piechart link", () => {
-//     const wrapper = mount(<Header />)
-//     const tag1 = wrapper.find('#my_id')
-//     // tag1.simulate('click')
-//     // const tree1 = shallow(<PieCharts />)
-//     // expect(toJson(tree1)).toMatchSnapshot();
-//   })
 
-
-
-
-
-   it("should click create piechart link", () => {
-    const wrapper = shallow(<Header />)
-    const button = wrapper.find('Navbar').find('Navbar.Collapse').find('Nav').find('NavItem').first()
-    // const component = renderer.create(button.props().onClick)
-    // let tree = component.toJSON();
-    // tree.props.onClick();
-    // expect(tree).toMatchSnapshot();
+  //using id
+  it("should click create piechart link", () => {
+    const wrapper = mount(<Header />)
+    const tag1 = wrapper.find('#piechart').hostNodes();
+    tag1.simulate('click')
+    const tree1 = shallow(<PieCharts />)
+    expect(toJson(tree1)).toMatchSnapshot();
   })
+
+
+  it("should click create linegraph link", () => {
+    const wrapper = mount(<Header />)
+    const tag2 = wrapper.find('#linegrph').hostNodes();
+    tag2.simulate('click')
+    const tree2 =shallow(< LineGraph/>)
+    expect(toJson(tree2)).toMatchSnapshot();
+  })
+
+  it("should click create login link", () => {
+    const wrapper = mount(<Header />)
+    const tag2 = wrapper.find('#linegrph').hostNodes();
+    tag2.simulate('click')
+    const tree2 =shallow(< LineGraph/>)
+    expect(toJson(tree2)).toMatchSnapshot();
+  })
+
+
+  // it("should click create piechart link", () => {
+  //   const wrapper = shallow(<Header />)
+  //   const button = wrapper.find('Navbar').find('Navbar.Collapse').find('Nav').find('NavItem').first()
+  //   const component = renderer.create(button.props().onClick)
+  //   // let tree = component.toJSON();
+  //   // tree.props.onClick();
+  //   // expect(tree).toMatchSnapshot();
+  // })
 
 
 
