@@ -22,6 +22,7 @@ import SingleUserNCommits from './components/Zoom2Graphs/SingleUserNCommits';
 import Table2Data from './components/Zoom3Graphs/table2Data';
 import TableData from './components/Zoom3Graphs/tableData';
 import CustomGoogleMap from './components/Maps/CustomGoogleMap';
+import ImdbGraphs from './components/ImdbGraphs/ImdbGraphs';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(reducers, {}, composeEnhancers(applyMiddleware(ReduxThunk)));
@@ -53,6 +54,7 @@ ReactDOM.render((
         <Route exact path="/simplegraph" component={Simplegraph}/>
         <Route exact path="/lineGraph" component={LineGraph}/>
         <Route exact path="/googleMap" component={CustomGoogleMap}/>
+        <Route exact path="/imdbGraphs" component={ImdbGraphs}/>
         <PrivateRoute exact path="/allGraphs" component={AllGraphs}/>
         <Route exact path="/callback" render={(props) => {
           handleAuthentication(props);
