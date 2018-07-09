@@ -56,7 +56,11 @@ const lodingGraphData = [
                       { this.props.single_usern_commits[0] && this.state.mouseOverValue && 
                         <Hint value={this.state.mouseOverValue}>
                           <div className='hintStyle'>
-                            <p>PR no.{this.state.mouseOverValue.label} :<br/>Commits : <br/> {this.state.mouseOverValue.theta}</p>
+                            <p>
+                              PR no. : {this.state.mouseOverValue.label}<br/>
+                              Repo : {this.state.mouseOverValue.repo}<br/>
+                              Commits : <br/> {this.state.mouseOverValue.theta}
+                            </p>
                           </div>
                         </Hint>
                       }
