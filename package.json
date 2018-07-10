@@ -16,6 +16,7 @@
     "react-scripts": "1.1.4",
     "react-spinkit": "^3.0.0",
     "react-test-renderer": "^16.4.1",
+    "react-toggle-switch": "^3.0.4",
     "react-vis": "^1.9.4",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0"

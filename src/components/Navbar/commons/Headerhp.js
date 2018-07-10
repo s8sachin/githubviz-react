@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Navbar, Nav, NavItem,Grid,Row,Col} from 'react-bootstrap';
-import logo from "../../hpp.png";
+import logo from "../../../hpp.png";
 import Switch from 'react-toggle-switch';
+import "react-toggle-switch/dist/css/switch.min.css"; 
 
 class Headerhp extends Component {
 

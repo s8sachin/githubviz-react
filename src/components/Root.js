@@ -14,7 +14,7 @@ class Root extends Component {
   render() {
     return (
       <div>
-        <Header/>
+        <Header />
         <Grid bsClass='container'>
           <Jumbotron>
             <h1>Hello, world!</h1>
