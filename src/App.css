@@ -149,3 +149,53 @@
  .table-custom{
   overflow-x: hidden;
  }
+ .color-text{
+  color: black ;
+  font-size: 16px;
+}
+.color-textt{
+color: black;
+font-size: 14px;
+}
+.black-color{
+color: black;
+}
+.switch.on {
+background: #4ae2b4 !important;
+}
+.verticleline{
+border-left: 1px solid grey;
+height: 39px;
+top: 8px;
+}
+input {
+background-color: transparent;
+border: 0px solid;
+margin-left: 12px;
+
+}
+.margin-left20{
+margin-left: 20px;
+}
+.mginleft-27{
+   margin-left: -27px;       
+}
+.marginleft-10{
+   margin-left: -10px;
+}
+.mgnleft15{
+margin-left: 15px;
+}
+.gly-rotate-80 {
+transform: rotate(80deg);
+}
+.gly-rotate-252 {
+ transform: rotate(252deg);
+}
+/* .navbar-default .container {
+margin: 0px;
+padding: 0px;
+} */
+.row-edit{
+width:1201px;
+}
