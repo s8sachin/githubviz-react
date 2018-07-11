@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BarGraph should mount Header component 1`] = `
+<div>
+  <Grid
+    bsClass="container"
+    componentClass="div"
+    fluid={false}
+  >
+    <Row
+      bsClass="row"
+      className="show-grid"
+      componentClass="div"
+    >
+      <Col
+        bsClass="col"
+        componentClass="div"
+        md={12}
+        xs={12}
+      >
+        <div>
+          <XYPlot
+            className=""
+            color="orange"
+            height={300}
+            stroke="black"
+            width={500}
+            xType="ordinal"
+          >
+            <VerticalGridLines
+              attr="x"
+              direction="vertical"
+            />
+            <HorizontalGridLines
+              attr="y"
+              direction="horizontal"
+            />
+            <XAxis
+              attr="x"
+              attrAxis="y"
+              orientation="bottom"
+            />
+            <YAxis
+              attr="y"
+              attrAxis="x"
+              orientation="left"
+            />
+            <VerticalBarSeries
+              className=""
+              data={
+                Array [
+                  Object {
+                    "x": 0,
+                    "y": 8,
+                  },
+                  Object {
+                    "x": 1,
+                    "y": 5,
+                  },
+                  Object {
+                    "x": 2,
+                    "y": 4,
+                  },
+                  Object {
+                    "x": 3,
+                    "y": 9,
+                  },
+                  Object {
+                    "x": 4,
+                    "y": 1,
+                  },
+                  Object {
+                    "x": 5,
+                    "y": 7,
+                  },
+                  Object {
+                    "x": 6,
+                    "y": 6,
+                  },
+                  Object {
+                    "x": 7,
+                    "y": 3,
+                  },
+                  Object {
+                    "x": 8,
+                    "y": 2,
+                  },
+                  Object {
+                    "x": 9,
+                    "y": 0,
+                  },
+                ]
+              }
+              onSeriesMouseOut={[Function]}
+              onValueMouseOver={[Function]}
+              stack={false}
+              style={Object {}}
+            />
+          </XYPlot>
+        </div>
+      </Col>
+    </Row>
+  </Grid>
+</div>
+`;

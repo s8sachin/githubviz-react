@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LineGraph should mount Header component 1`] = `
+<div>
+  <Grid
+    bsClass="container"
+    componentClass="div"
+    fluid={false}
+  >
+    <Row
+      bsClass="row"
+      componentClass="div"
+    >
+      <Col
+        bsClass="col"
+        componentClass="div"
+        md={12}
+        xs={12}
+      >
+        <XYPlot
+          className=""
+          height={300}
+          stroke="orange"
+          width={500}
+          xType="ordinal"
+          yType="ordinal"
+        >
+          <VerticalGridLines
+            attr="x"
+            direction="vertical"
+          />
+          <HorizontalGridLines
+            attr="y"
+            direction="horizontal"
+          />
+          <XAxis
+            attr="x"
+            attrAxis="y"
+            orientation="bottom"
+          />
+          <YAxis
+            attr="y"
+            attrAxis="x"
+            orientation="left"
+          />
+          <LineMarkSeries
+            className=""
+            curve={null}
+            data={
+              Array [
+                Object {
+                  "x": "Repo",
+                  "y": "C1",
+                },
+                Object {
+                  "x": "Repo1",
+                  "y": "C2",
+                },
+                Object {
+                  "x": "Repo2",
+                  "y": "C3",
+                },
+                Object {
+                  "x": "Repo3",
+                  "y": "C4",
+                },
+                Object {
+                  "x": "Repo4",
+                  "y": "C5",
+                },
+                Object {
+                  "x": "Repo5",
+                  "y": "C6",
+                },
+              ]
+            }
+            getNull={[Function]}
+            lineStyle={Object {}}
+            markStyle={Object {}}
+            onSeriesMouseOut={[Function]}
+            onValueMouseOver={[Function]}
+            opacity={1}
+            stack={false}
+            strokeStyle="solid"
+            style={Object {}}
+          />
+        </XYPlot>
+      </Col>
+    </Row>
+  </Grid>
+</div>
+`;

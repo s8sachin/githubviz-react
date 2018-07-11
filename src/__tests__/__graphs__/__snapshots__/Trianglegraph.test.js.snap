@@ -1,0 +1,3928 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TriangleGraph should mount Header component 1`] = `
+<div>
+  <Grid
+    bsClass="container"
+    componentClass="div"
+    fluid={false}
+  >
+    <Row
+      bsClass="row"
+      componentClass="div"
+    >
+      <XYPlot
+        className=""
+        height={300}
+        width={300}
+      >
+        <GradientDefs
+          className=""
+        >
+          <radialGradient
+            cx="50%"
+            cy="50%"
+            fx="50%"
+            fy="50%"
+            id="grad1"
+            r="50%"
+          >
+            <stop
+              offset="0%"
+              stopColor="#829AE3"
+              stopOpacity="0"
+            />
+            <stop
+              offset="100%"
+              stopColor="#12939A"
+              stopOpacity="1"
+            />
+          </radialGradient>
+        </GradientDefs>
+        <XAxis
+          attr="x"
+          attrAxis="y"
+          orientation="bottom"
+        />
+        <YAxis
+          attr="y"
+          attrAxis="x"
+          orientation="left"
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 0,
+              },
+              Object {
+                "x": 0,
+                "y": 7,
+              },
+              Object {
+                "x": 7,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-0"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 0,
+              },
+              Object {
+                "x": 0,
+                "y": 3.5,
+              },
+              Object {
+                "x": 3.5,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-1"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 0,
+              },
+              Object {
+                "x": 0,
+                "y": 1.75,
+              },
+              Object {
+                "x": 1.75,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-2"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 0,
+              },
+              Object {
+                "x": 0,
+                "y": 0.875,
+              },
+              Object {
+                "x": 0.875,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-3"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 0,
+              },
+              Object {
+                "x": 0,
+                "y": 0.4375,
+              },
+              Object {
+                "x": 0.4375,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-4"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0.875,
+                "y": 0,
+              },
+              Object {
+                "x": 0.875,
+                "y": 0.4375,
+              },
+              Object {
+                "x": 1.3125,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-5"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 0.875,
+              },
+              Object {
+                "x": 0,
+                "y": 1.3125,
+              },
+              Object {
+                "x": 0.4375,
+                "y": 0.875,
+              },
+            ]
+          }
+          key="triangle-6"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 1.75,
+                "y": 0,
+              },
+              Object {
+                "x": 1.75,
+                "y": 0.875,
+              },
+              Object {
+                "x": 2.625,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-7"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 1.75,
+                "y": 0,
+              },
+              Object {
+                "x": 1.75,
+                "y": 0.4375,
+              },
+              Object {
+                "x": 2.1875,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-8"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 2.625,
+                "y": 0,
+              },
+              Object {
+                "x": 2.625,
+                "y": 0.4375,
+              },
+              Object {
+                "x": 3.0625,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-9"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 1.75,
+                "y": 0.875,
+              },
+              Object {
+                "x": 1.75,
+                "y": 1.3125,
+              },
+              Object {
+                "x": 2.1875,
+                "y": 0.875,
+              },
+            ]
+          }
+          key="triangle-10"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 1.75,
+              },
+              Object {
+                "x": 0,
+                "y": 2.625,
+              },
+              Object {
+                "x": 0.875,
+                "y": 1.75,
+              },
+            ]
+          }
+          key="triangle-11"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 1.75,
+              },
+              Object {
+                "x": 0,
+                "y": 2.1875,
+              },
+              Object {
+                "x": 0.4375,
+                "y": 1.75,
+              },
+            ]
+          }
+          key="triangle-12"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0.875,
+                "y": 1.75,
+              },
+              Object {
+                "x": 0.875,
+                "y": 2.1875,
+              },
+              Object {
+                "x": 1.3125,
+                "y": 1.75,
+              },
+            ]
+          }
+          key="triangle-13"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 2.625,
+              },
+              Object {
+                "x": 0,
+                "y": 3.0625,
+              },
+              Object {
+                "x": 0.4375,
+                "y": 2.625,
+              },
+            ]
+          }
+          key="triangle-14"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 3.5,
+                "y": 0,
+              },
+              Object {
+                "x": 3.5,
+                "y": 1.75,
+              },
+              Object {
+                "x": 5.25,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-15"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 3.5,
+                "y": 0,
+              },
+              Object {
+                "x": 3.5,
+                "y": 0.875,
+              },
+              Object {
+                "x": 4.375,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-16"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 3.5,
+                "y": 0,
+              },
+              Object {
+                "x": 3.5,
+                "y": 0.4375,
+              },
+              Object {
+                "x": 3.9375,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-17"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 4.375,
+                "y": 0,
+              },
+              Object {
+                "x": 4.375,
+                "y": 0.4375,
+              },
+              Object {
+                "x": 4.8125,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-18"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 3.5,
+                "y": 0.875,
+              },
+              Object {
+                "x": 3.5,
+                "y": 1.3125,
+              },
+              Object {
+                "x": 3.9375,
+                "y": 0.875,
+              },
+            ]
+          }
+          key="triangle-19"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 5.25,
+                "y": 0,
+              },
+              Object {
+                "x": 5.25,
+                "y": 0.875,
+              },
+              Object {
+                "x": 6.125,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-20"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 5.25,
+                "y": 0,
+              },
+              Object {
+                "x": 5.25,
+                "y": 0.4375,
+              },
+              Object {
+                "x": 5.6875,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-21"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 6.125,
+                "y": 0,
+              },
+              Object {
+                "x": 6.125,
+                "y": 0.4375,
+              },
+              Object {
+                "x": 6.5625,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-22"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 5.25,
+                "y": 0.875,
+              },
+              Object {
+                "x": 5.25,
+                "y": 1.3125,
+              },
+              Object {
+                "x": 5.6875,
+                "y": 0.875,
+              },
+            ]
+          }
+          key="triangle-23"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 3.5,
+                "y": 1.75,
+              },
+              Object {
+                "x": 3.5,
+                "y": 2.625,
+              },
+              Object {
+                "x": 4.375,
+                "y": 1.75,
+              },
+            ]
+          }
+          key="triangle-24"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 3.5,
+                "y": 1.75,
+              },
+              Object {
+                "x": 3.5,
+                "y": 2.1875,
+              },
+              Object {
+                "x": 3.9375,
+                "y": 1.75,
+              },
+            ]
+          }
+          key="triangle-25"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 4.375,
+                "y": 1.75,
+              },
+              Object {
+                "x": 4.375,
+                "y": 2.1875,
+              },
+              Object {
+                "x": 4.8125,
+                "y": 1.75,
+              },
+            ]
+          }
+          key="triangle-26"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 3.5,
+                "y": 2.625,
+              },
+              Object {
+                "x": 3.5,
+                "y": 3.0625,
+              },
+              Object {
+                "x": 3.9375,
+                "y": 2.625,
+              },
+            ]
+          }
+          key="triangle-27"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 3.5,
+              },
+              Object {
+                "x": 0,
+                "y": 5.25,
+              },
+              Object {
+                "x": 1.75,
+                "y": 3.5,
+              },
+            ]
+          }
+          key="triangle-28"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 3.5,
+              },
+              Object {
+                "x": 0,
+                "y": 4.375,
+              },
+              Object {
+                "x": 0.875,
+                "y": 3.5,
+              },
+            ]
+          }
+          key="triangle-29"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 3.5,
+              },
+              Object {
+                "x": 0,
+                "y": 3.9375,
+              },
+              Object {
+                "x": 0.4375,
+                "y": 3.5,
+              },
+            ]
+          }
+          key="triangle-30"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0.875,
+                "y": 3.5,
+              },
+              Object {
+                "x": 0.875,
+                "y": 3.9375,
+              },
+              Object {
+                "x": 1.3125,
+                "y": 3.5,
+              },
+            ]
+          }
+          key="triangle-31"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 4.375,
+              },
+              Object {
+                "x": 0,
+                "y": 4.8125,
+              },
+              Object {
+                "x": 0.4375,
+                "y": 4.375,
+              },
+            ]
+          }
+          key="triangle-32"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 1.75,
+                "y": 3.5,
+              },
+              Object {
+                "x": 1.75,
+                "y": 4.375,
+              },
+              Object {
+                "x": 2.625,
+                "y": 3.5,
+              },
+            ]
+          }
+          key="triangle-33"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 1.75,
+                "y": 3.5,
+              },
+              Object {
+                "x": 1.75,
+                "y": 3.9375,
+              },
+              Object {
+                "x": 2.1875,
+                "y": 3.5,
+              },
+            ]
+          }
+          key="triangle-34"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 2.625,
+                "y": 3.5,
+              },
+              Object {
+                "x": 2.625,
+                "y": 3.9375,
+              },
+              Object {
+                "x": 3.0625,
+                "y": 3.5,
+              },
+            ]
+          }
+          key="triangle-35"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 1.75,
+                "y": 4.375,
+              },
+              Object {
+                "x": 1.75,
+                "y": 4.8125,
+              },
+              Object {
+                "x": 2.1875,
+                "y": 4.375,
+              },
+            ]
+          }
+          key="triangle-36"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 5.25,
+              },
+              Object {
+                "x": 0,
+                "y": 6.125,
+              },
+              Object {
+                "x": 0.875,
+                "y": 5.25,
+              },
+            ]
+          }
+          key="triangle-37"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 5.25,
+              },
+              Object {
+                "x": 0,
+                "y": 5.6875,
+              },
+              Object {
+                "x": 0.4375,
+                "y": 5.25,
+              },
+            ]
+          }
+          key="triangle-38"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0.875,
+                "y": 5.25,
+              },
+              Object {
+                "x": 0.875,
+                "y": 5.6875,
+              },
+              Object {
+                "x": 1.3125,
+                "y": 5.25,
+              },
+            ]
+          }
+          key="triangle-39"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 6.125,
+              },
+              Object {
+                "x": 0,
+                "y": 6.5625,
+              },
+              Object {
+                "x": 0.4375,
+                "y": 6.125,
+              },
+            ]
+          }
+          key="triangle-40"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7,
+                "y": 0,
+              },
+              Object {
+                "x": 7,
+                "y": 3.5,
+              },
+              Object {
+                "x": 10.5,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-41"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7,
+                "y": 0,
+              },
+              Object {
+                "x": 7,
+                "y": 1.75,
+              },
+              Object {
+                "x": 8.75,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-42"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7,
+                "y": 0,
+              },
+              Object {
+                "x": 7,
+                "y": 0.875,
+              },
+              Object {
+                "x": 7.875,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-43"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7,
+                "y": 0,
+              },
+              Object {
+                "x": 7,
+                "y": 0.4375,
+              },
+              Object {
+                "x": 7.4375,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-44"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7.875,
+                "y": 0,
+              },
+              Object {
+                "x": 7.875,
+                "y": 0.4375,
+              },
+              Object {
+                "x": 8.3125,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-45"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7,
+                "y": 0.875,
+              },
+              Object {
+                "x": 7,
+                "y": 1.3125,
+              },
+              Object {
+                "x": 7.4375,
+                "y": 0.875,
+              },
+            ]
+          }
+          key="triangle-46"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 8.75,
+                "y": 0,
+              },
+              Object {
+                "x": 8.75,
+                "y": 0.875,
+              },
+              Object {
+                "x": 9.625,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-47"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 8.75,
+                "y": 0,
+              },
+              Object {
+                "x": 8.75,
+                "y": 0.4375,
+              },
+              Object {
+                "x": 9.1875,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-48"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 9.625,
+                "y": 0,
+              },
+              Object {
+                "x": 9.625,
+                "y": 0.4375,
+              },
+              Object {
+                "x": 10.0625,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-49"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 8.75,
+                "y": 0.875,
+              },
+              Object {
+                "x": 8.75,
+                "y": 1.3125,
+              },
+              Object {
+                "x": 9.1875,
+                "y": 0.875,
+              },
+            ]
+          }
+          key="triangle-50"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7,
+                "y": 1.75,
+              },
+              Object {
+                "x": 7,
+                "y": 2.625,
+              },
+              Object {
+                "x": 7.875,
+                "y": 1.75,
+              },
+            ]
+          }
+          key="triangle-51"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7,
+                "y": 1.75,
+              },
+              Object {
+                "x": 7,
+                "y": 2.1875,
+              },
+              Object {
+                "x": 7.4375,
+                "y": 1.75,
+              },
+            ]
+          }
+          key="triangle-52"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7.875,
+                "y": 1.75,
+              },
+              Object {
+                "x": 7.875,
+                "y": 2.1875,
+              },
+              Object {
+                "x": 8.3125,
+                "y": 1.75,
+              },
+            ]
+          }
+          key="triangle-53"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7,
+                "y": 2.625,
+              },
+              Object {
+                "x": 7,
+                "y": 3.0625,
+              },
+              Object {
+                "x": 7.4375,
+                "y": 2.625,
+              },
+            ]
+          }
+          key="triangle-54"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 10.5,
+                "y": 0,
+              },
+              Object {
+                "x": 10.5,
+                "y": 1.75,
+              },
+              Object {
+                "x": 12.25,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-55"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 10.5,
+                "y": 0,
+              },
+              Object {
+                "x": 10.5,
+                "y": 0.875,
+              },
+              Object {
+                "x": 11.375,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-56"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 10.5,
+                "y": 0,
+              },
+              Object {
+                "x": 10.5,
+                "y": 0.4375,
+              },
+              Object {
+                "x": 10.9375,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-57"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 11.375,
+                "y": 0,
+              },
+              Object {
+                "x": 11.375,
+                "y": 0.4375,
+              },
+              Object {
+                "x": 11.8125,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-58"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 10.5,
+                "y": 0.875,
+              },
+              Object {
+                "x": 10.5,
+                "y": 1.3125,
+              },
+              Object {
+                "x": 10.9375,
+                "y": 0.875,
+              },
+            ]
+          }
+          key="triangle-59"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 12.25,
+                "y": 0,
+              },
+              Object {
+                "x": 12.25,
+                "y": 0.875,
+              },
+              Object {
+                "x": 13.125,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-60"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 12.25,
+                "y": 0,
+              },
+              Object {
+                "x": 12.25,
+                "y": 0.4375,
+              },
+              Object {
+                "x": 12.6875,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-61"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 13.125,
+                "y": 0,
+              },
+              Object {
+                "x": 13.125,
+                "y": 0.4375,
+              },
+              Object {
+                "x": 13.5625,
+                "y": 0,
+              },
+            ]
+          }
+          key="triangle-62"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 12.25,
+                "y": 0.875,
+              },
+              Object {
+                "x": 12.25,
+                "y": 1.3125,
+              },
+              Object {
+                "x": 12.6875,
+                "y": 0.875,
+              },
+            ]
+          }
+          key="triangle-63"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 10.5,
+                "y": 1.75,
+              },
+              Object {
+                "x": 10.5,
+                "y": 2.625,
+              },
+              Object {
+                "x": 11.375,
+                "y": 1.75,
+              },
+            ]
+          }
+          key="triangle-64"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 10.5,
+                "y": 1.75,
+              },
+              Object {
+                "x": 10.5,
+                "y": 2.1875,
+              },
+              Object {
+                "x": 10.9375,
+                "y": 1.75,
+              },
+            ]
+          }
+          key="triangle-65"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 11.375,
+                "y": 1.75,
+              },
+              Object {
+                "x": 11.375,
+                "y": 2.1875,
+              },
+              Object {
+                "x": 11.8125,
+                "y": 1.75,
+              },
+            ]
+          }
+          key="triangle-66"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 10.5,
+                "y": 2.625,
+              },
+              Object {
+                "x": 10.5,
+                "y": 3.0625,
+              },
+              Object {
+                "x": 10.9375,
+                "y": 2.625,
+              },
+            ]
+          }
+          key="triangle-67"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7,
+                "y": 3.5,
+              },
+              Object {
+                "x": 7,
+                "y": 5.25,
+              },
+              Object {
+                "x": 8.75,
+                "y": 3.5,
+              },
+            ]
+          }
+          key="triangle-68"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7,
+                "y": 3.5,
+              },
+              Object {
+                "x": 7,
+                "y": 4.375,
+              },
+              Object {
+                "x": 7.875,
+                "y": 3.5,
+              },
+            ]
+          }
+          key="triangle-69"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7,
+                "y": 3.5,
+              },
+              Object {
+                "x": 7,
+                "y": 3.9375,
+              },
+              Object {
+                "x": 7.4375,
+                "y": 3.5,
+              },
+            ]
+          }
+          key="triangle-70"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7.875,
+                "y": 3.5,
+              },
+              Object {
+                "x": 7.875,
+                "y": 3.9375,
+              },
+              Object {
+                "x": 8.3125,
+                "y": 3.5,
+              },
+            ]
+          }
+          key="triangle-71"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7,
+                "y": 4.375,
+              },
+              Object {
+                "x": 7,
+                "y": 4.8125,
+              },
+              Object {
+                "x": 7.4375,
+                "y": 4.375,
+              },
+            ]
+          }
+          key="triangle-72"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 8.75,
+                "y": 3.5,
+              },
+              Object {
+                "x": 8.75,
+                "y": 4.375,
+              },
+              Object {
+                "x": 9.625,
+                "y": 3.5,
+              },
+            ]
+          }
+          key="triangle-73"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 8.75,
+                "y": 3.5,
+              },
+              Object {
+                "x": 8.75,
+                "y": 3.9375,
+              },
+              Object {
+                "x": 9.1875,
+                "y": 3.5,
+              },
+            ]
+          }
+          key="triangle-74"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 9.625,
+                "y": 3.5,
+              },
+              Object {
+                "x": 9.625,
+                "y": 3.9375,
+              },
+              Object {
+                "x": 10.0625,
+                "y": 3.5,
+              },
+            ]
+          }
+          key="triangle-75"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 8.75,
+                "y": 4.375,
+              },
+              Object {
+                "x": 8.75,
+                "y": 4.8125,
+              },
+              Object {
+                "x": 9.1875,
+                "y": 4.375,
+              },
+            ]
+          }
+          key="triangle-76"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7,
+                "y": 5.25,
+              },
+              Object {
+                "x": 7,
+                "y": 6.125,
+              },
+              Object {
+                "x": 7.875,
+                "y": 5.25,
+              },
+            ]
+          }
+          key="triangle-77"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7,
+                "y": 5.25,
+              },
+              Object {
+                "x": 7,
+                "y": 5.6875,
+              },
+              Object {
+                "x": 7.4375,
+                "y": 5.25,
+              },
+            ]
+          }
+          key="triangle-78"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7.875,
+                "y": 5.25,
+              },
+              Object {
+                "x": 7.875,
+                "y": 5.6875,
+              },
+              Object {
+                "x": 8.3125,
+                "y": 5.25,
+              },
+            ]
+          }
+          key="triangle-79"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 7,
+                "y": 6.125,
+              },
+              Object {
+                "x": 7,
+                "y": 6.5625,
+              },
+              Object {
+                "x": 7.4375,
+                "y": 6.125,
+              },
+            ]
+          }
+          key="triangle-80"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 7,
+              },
+              Object {
+                "x": 0,
+                "y": 10.5,
+              },
+              Object {
+                "x": 3.5,
+                "y": 7,
+              },
+            ]
+          }
+          key="triangle-81"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 7,
+              },
+              Object {
+                "x": 0,
+                "y": 8.75,
+              },
+              Object {
+                "x": 1.75,
+                "y": 7,
+              },
+            ]
+          }
+          key="triangle-82"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 7,
+              },
+              Object {
+                "x": 0,
+                "y": 7.875,
+              },
+              Object {
+                "x": 0.875,
+                "y": 7,
+              },
+            ]
+          }
+          key="triangle-83"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 7,
+              },
+              Object {
+                "x": 0,
+                "y": 7.4375,
+              },
+              Object {
+                "x": 0.4375,
+                "y": 7,
+              },
+            ]
+          }
+          key="triangle-84"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0.875,
+                "y": 7,
+              },
+              Object {
+                "x": 0.875,
+                "y": 7.4375,
+              },
+              Object {
+                "x": 1.3125,
+                "y": 7,
+              },
+            ]
+          }
+          key="triangle-85"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 7.875,
+              },
+              Object {
+                "x": 0,
+                "y": 8.3125,
+              },
+              Object {
+                "x": 0.4375,
+                "y": 7.875,
+              },
+            ]
+          }
+          key="triangle-86"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 1.75,
+                "y": 7,
+              },
+              Object {
+                "x": 1.75,
+                "y": 7.875,
+              },
+              Object {
+                "x": 2.625,
+                "y": 7,
+              },
+            ]
+          }
+          key="triangle-87"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 1.75,
+                "y": 7,
+              },
+              Object {
+                "x": 1.75,
+                "y": 7.4375,
+              },
+              Object {
+                "x": 2.1875,
+                "y": 7,
+              },
+            ]
+          }
+          key="triangle-88"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 2.625,
+                "y": 7,
+              },
+              Object {
+                "x": 2.625,
+                "y": 7.4375,
+              },
+              Object {
+                "x": 3.0625,
+                "y": 7,
+              },
+            ]
+          }
+          key="triangle-89"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 1.75,
+                "y": 7.875,
+              },
+              Object {
+                "x": 1.75,
+                "y": 8.3125,
+              },
+              Object {
+                "x": 2.1875,
+                "y": 7.875,
+              },
+            ]
+          }
+          key="triangle-90"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 8.75,
+              },
+              Object {
+                "x": 0,
+                "y": 9.625,
+              },
+              Object {
+                "x": 0.875,
+                "y": 8.75,
+              },
+            ]
+          }
+          key="triangle-91"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 8.75,
+              },
+              Object {
+                "x": 0,
+                "y": 9.1875,
+              },
+              Object {
+                "x": 0.4375,
+                "y": 8.75,
+              },
+            ]
+          }
+          key="triangle-92"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0.875,
+                "y": 8.75,
+              },
+              Object {
+                "x": 0.875,
+                "y": 9.1875,
+              },
+              Object {
+                "x": 1.3125,
+                "y": 8.75,
+              },
+            ]
+          }
+          key="triangle-93"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 9.625,
+              },
+              Object {
+                "x": 0,
+                "y": 10.0625,
+              },
+              Object {
+                "x": 0.4375,
+                "y": 9.625,
+              },
+            ]
+          }
+          key="triangle-94"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 3.5,
+                "y": 7,
+              },
+              Object {
+                "x": 3.5,
+                "y": 8.75,
+              },
+              Object {
+                "x": 5.25,
+                "y": 7,
+              },
+            ]
+          }
+          key="triangle-95"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 3.5,
+                "y": 7,
+              },
+              Object {
+                "x": 3.5,
+                "y": 7.875,
+              },
+              Object {
+                "x": 4.375,
+                "y": 7,
+              },
+            ]
+          }
+          key="triangle-96"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 3.5,
+                "y": 7,
+              },
+              Object {
+                "x": 3.5,
+                "y": 7.4375,
+              },
+              Object {
+                "x": 3.9375,
+                "y": 7,
+              },
+            ]
+          }
+          key="triangle-97"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 4.375,
+                "y": 7,
+              },
+              Object {
+                "x": 4.375,
+                "y": 7.4375,
+              },
+              Object {
+                "x": 4.8125,
+                "y": 7,
+              },
+            ]
+          }
+          key="triangle-98"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 3.5,
+                "y": 7.875,
+              },
+              Object {
+                "x": 3.5,
+                "y": 8.3125,
+              },
+              Object {
+                "x": 3.9375,
+                "y": 7.875,
+              },
+            ]
+          }
+          key="triangle-99"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 5.25,
+                "y": 7,
+              },
+              Object {
+                "x": 5.25,
+                "y": 7.875,
+              },
+              Object {
+                "x": 6.125,
+                "y": 7,
+              },
+            ]
+          }
+          key="triangle-100"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 5.25,
+                "y": 7,
+              },
+              Object {
+                "x": 5.25,
+                "y": 7.4375,
+              },
+              Object {
+                "x": 5.6875,
+                "y": 7,
+              },
+            ]
+          }
+          key="triangle-101"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 6.125,
+                "y": 7,
+              },
+              Object {
+                "x": 6.125,
+                "y": 7.4375,
+              },
+              Object {
+                "x": 6.5625,
+                "y": 7,
+              },
+            ]
+          }
+          key="triangle-102"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 5.25,
+                "y": 7.875,
+              },
+              Object {
+                "x": 5.25,
+                "y": 8.3125,
+              },
+              Object {
+                "x": 5.6875,
+                "y": 7.875,
+              },
+            ]
+          }
+          key="triangle-103"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 3.5,
+                "y": 8.75,
+              },
+              Object {
+                "x": 3.5,
+                "y": 9.625,
+              },
+              Object {
+                "x": 4.375,
+                "y": 8.75,
+              },
+            ]
+          }
+          key="triangle-104"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 3.5,
+                "y": 8.75,
+              },
+              Object {
+                "x": 3.5,
+                "y": 9.1875,
+              },
+              Object {
+                "x": 3.9375,
+                "y": 8.75,
+              },
+            ]
+          }
+          key="triangle-105"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 4.375,
+                "y": 8.75,
+              },
+              Object {
+                "x": 4.375,
+                "y": 9.1875,
+              },
+              Object {
+                "x": 4.8125,
+                "y": 8.75,
+              },
+            ]
+          }
+          key="triangle-106"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 3.5,
+                "y": 9.625,
+              },
+              Object {
+                "x": 3.5,
+                "y": 10.0625,
+              },
+              Object {
+                "x": 3.9375,
+                "y": 9.625,
+              },
+            ]
+          }
+          key="triangle-107"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 10.5,
+              },
+              Object {
+                "x": 0,
+                "y": 12.25,
+              },
+              Object {
+                "x": 1.75,
+                "y": 10.5,
+              },
+            ]
+          }
+          key="triangle-108"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 10.5,
+              },
+              Object {
+                "x": 0,
+                "y": 11.375,
+              },
+              Object {
+                "x": 0.875,
+                "y": 10.5,
+              },
+            ]
+          }
+          key="triangle-109"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 10.5,
+              },
+              Object {
+                "x": 0,
+                "y": 10.9375,
+              },
+              Object {
+                "x": 0.4375,
+                "y": 10.5,
+              },
+            ]
+          }
+          key="triangle-110"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0.875,
+                "y": 10.5,
+              },
+              Object {
+                "x": 0.875,
+                "y": 10.9375,
+              },
+              Object {
+                "x": 1.3125,
+                "y": 10.5,
+              },
+            ]
+          }
+          key="triangle-111"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 11.375,
+              },
+              Object {
+                "x": 0,
+                "y": 11.8125,
+              },
+              Object {
+                "x": 0.4375,
+                "y": 11.375,
+              },
+            ]
+          }
+          key="triangle-112"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 1.75,
+                "y": 10.5,
+              },
+              Object {
+                "x": 1.75,
+                "y": 11.375,
+              },
+              Object {
+                "x": 2.625,
+                "y": 10.5,
+              },
+            ]
+          }
+          key="triangle-113"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 1.75,
+                "y": 10.5,
+              },
+              Object {
+                "x": 1.75,
+                "y": 10.9375,
+              },
+              Object {
+                "x": 2.1875,
+                "y": 10.5,
+              },
+            ]
+          }
+          key="triangle-114"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 2.625,
+                "y": 10.5,
+              },
+              Object {
+                "x": 2.625,
+                "y": 10.9375,
+              },
+              Object {
+                "x": 3.0625,
+                "y": 10.5,
+              },
+            ]
+          }
+          key="triangle-115"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 1.75,
+                "y": 11.375,
+              },
+              Object {
+                "x": 1.75,
+                "y": 11.8125,
+              },
+              Object {
+                "x": 2.1875,
+                "y": 11.375,
+              },
+            ]
+          }
+          key="triangle-116"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 12.25,
+              },
+              Object {
+                "x": 0,
+                "y": 13.125,
+              },
+              Object {
+                "x": 0.875,
+                "y": 12.25,
+              },
+            ]
+          }
+          key="triangle-117"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 12.25,
+              },
+              Object {
+                "x": 0,
+                "y": 12.6875,
+              },
+              Object {
+                "x": 0.4375,
+                "y": 12.25,
+              },
+            ]
+          }
+          key="triangle-118"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0.875,
+                "y": 12.25,
+              },
+              Object {
+                "x": 0.875,
+                "y": 12.6875,
+              },
+              Object {
+                "x": 1.3125,
+                "y": 12.25,
+              },
+            ]
+          }
+          key="triangle-119"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+        <PolygonSeries
+          className=""
+          color="url(#grad1)"
+          data={
+            Array [
+              Object {
+                "x": 0,
+                "y": 13.125,
+              },
+              Object {
+                "x": 0,
+                "y": 13.5625,
+              },
+              Object {
+                "x": 0.4375,
+                "y": 13.125,
+              },
+            ]
+          }
+          key="triangle-120"
+          onSeriesMouseOut={[Function]}
+          onSeriesMouseOver={[Function]}
+          stack={false}
+          style={
+            Object {
+              "fill": null,
+              "opacity": 0.5,
+              "strokeOpacity": 1,
+              "strokeWidth": 0.5,
+            }
+          }
+        />
+      </XYPlot>
+    </Row>
+  </Grid>
+</div>
+`;

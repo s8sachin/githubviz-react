@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlotGraph should mount Header component 1`] = `
+<div>
+  <Grid
+    bsClass="container"
+    componentClass="div"
+    fluid={false}
+  >
+    <Row
+      bsClass="row"
+      componentClass="div"
+    >
+      <XYPlot
+        className=""
+        height={300}
+        width={300}
+      >
+        <HorizontalGridLines
+          attr="y"
+          direction="horizontal"
+        />
+        <VerticalGridLines
+          attr="x"
+          direction="vertical"
+        />
+        <XAxis
+          attr="x"
+          attrAxis="y"
+          orientation="bottom"
+          position="start"
+          title="X Axis"
+        />
+        <YAxis
+          attr="y"
+          attrAxis="x"
+          orientation="left"
+          title="Y Axis"
+        />
+        <LineSeries
+          className="first-series"
+          curve={null}
+          data={
+            Array [
+              Object {
+                "x": 1,
+                "y": 3,
+              },
+              Object {
+                "x": 2,
+                "y": 5,
+              },
+              Object {
+                "x": 3,
+                "y": 15,
+              },
+              Object {
+                "x": 4,
+                "y": 12,
+              },
+            ]
+          }
+          getNull={[Function]}
+          opacity={1}
+          stack={false}
+          strokeStyle="solid"
+          style={Object {}}
+        />
+        <LineSeries
+          className="second-series"
+          curve={null}
+          data={null}
+          getNull={[Function]}
+          opacity={1}
+          stack={false}
+          strokeStyle="solid"
+          style={Object {}}
+        />
+        <LineSeries
+          className="third-series"
+          curve="curveMonotoneX"
+          data={
+            Array [
+              Object {
+                "x": 1,
+                "y": 10,
+              },
+              Object {
+                "x": 2,
+                "y": 4,
+              },
+              Object {
+                "x": 3,
+                "y": 2,
+              },
+              Object {
+                "x": 4,
+                "y": 15,
+              },
+            ]
+          }
+          getNull={[Function]}
+          opacity={1}
+          stack={false}
+          strokeDasharray="7, 3"
+          strokeStyle="solid"
+          style={
+            Object {
+              "strokeDasharray": "2 2",
+            }
+          }
+        />
+        <LineSeries
+          className="fourth-series"
+          curve={[Function]}
+          data={
+            Array [
+              Object {
+                "x": 1,
+                "y": 7,
+              },
+              Object {
+                "x": 2,
+                "y": 11,
+              },
+              Object {
+                "x": 3,
+                "y": 9,
+              },
+              Object {
+                "x": 4,
+                "y": 2,
+              },
+            ]
+          }
+          getNull={[Function]}
+          opacity={1}
+          stack={false}
+          strokeStyle="solid"
+          style={Object {}}
+        />
+      </XYPlot>
+    </Row>
+  </Grid>
+</div>
+`;
