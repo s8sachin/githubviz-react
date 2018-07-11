@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Markserieschart should mount sunburst component 1`] = `
+<XYPlot
+  className=""
+  height={300}
+  width={300}
+>
+  <VerticalGridLines
+    attr="x"
+    direction="vertical"
+  />
+  <HorizontalGridLines
+    attr="y"
+    direction="horizontal"
+  />
+  <XAxis
+    attr="x"
+    attrAxis="y"
+    orientation="bottom"
+  />
+  <YAxis
+    attr="y"
+    attrAxis="x"
+    orientation="left"
+  />
+  <MarkSeries
+    className="mark-series-example"
+    data={
+      Array [
+        Object {
+          "size": 30,
+          "x": 1,
+          "y": 10,
+        },
+        Object {
+          "size": 10,
+          "x": 1.7,
+          "y": 12,
+        },
+        Object {
+          "size": 1,
+          "x": 2,
+          "y": 5,
+        },
+        Object {
+          "size": 12,
+          "x": 3,
+          "y": 15,
+        },
+        Object {
+          "size": 4,
+          "x": 2.5,
+          "y": 7,
+        },
+      ]
+    }
+    getNull={[Function]}
+    opacity="0.8"
+    sizeRange={
+      Array [
+        5,
+        15,
+      ]
+    }
+    strokeWidth={2}
+  />
+</XYPlot>
+`;

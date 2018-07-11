@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SunburstWithTooltips should mount Header component 1`] = `
+<Sunburst
+  className=""
+  colorType="literal"
+  data={
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            Object {
+              "bigness": 1,
+              "children": Array [],
+              "name": "excellent",
+            },
+            Object {
+              "bigness": 1,
+              "children": Array [],
+              "name": "chart",
+            },
+          ],
+        },
+        Object {
+          "bigness": 1,
+          "children": Array [],
+          "labelStyle": Object {
+            "fontSize": 15,
+            "fontWeight": "bold",
+          },
+          "name": "cool",
+        },
+        Object {
+          "bigness": 1,
+          "children": Array [],
+          "name": "dogs",
+        },
+        Object {
+          "bigness": 1,
+          "children": Array [],
+          "name": "sunglasses",
+        },
+        Object {
+          "children": Array [
+            Object {
+              "bigness": 1,
+              "children": Array [],
+              "name": "great",
+            },
+            Object {
+              "bigness": 1,
+              "children": Array [],
+              "name": "label",
+            },
+          ],
+        },
+      ],
+    }
+  }
+  getAngle={[Function]}
+  getAngle0={[Function]}
+  getColor={[Function]}
+  getLabel={[Function]}
+  getSize={[Function]}
+  height={300}
+  hideRootNode={false}
+  margin={
+    Object {
+      "bottom": 50,
+      "left": 50,
+      "right": 50,
+      "top": 50,
+    }
+  }
+  onValueMouseOut={[Function]}
+  onValueMouseOver={[Function]}
+  style={
+    Object {
+      "stroke": "#fff",
+    }
+  }
+  width={350}
+/>
+`;
+
+exports[`SunburstWithTooltips should mount sunburst component 1`] = `
+<Sunburst
+  className=""
+  colorType="literal"
+  data={
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            Object {
+              "bigness": 1,
+              "children": Array [],
+              "name": "excellent",
+            },
+            Object {
+              "bigness": 1,
+              "children": Array [],
+              "name": "chart",
+            },
+          ],
+        },
+        Object {
+          "bigness": 1,
+          "children": Array [],
+          "labelStyle": Object {
+            "fontSize": 15,
+            "fontWeight": "bold",
+          },
+          "name": "cool",
+        },
+        Object {
+          "bigness": 1,
+          "children": Array [],
+          "name": "dogs",
+        },
+        Object {
+          "bigness": 1,
+          "children": Array [],
+          "name": "sunglasses",
+        },
+        Object {
+          "children": Array [
+            Object {
+              "bigness": 1,
+              "children": Array [],
+              "name": "great",
+            },
+            Object {
+              "bigness": 1,
+              "children": Array [],
+              "name": "label",
+            },
+          ],
+        },
+      ],
+    }
+  }
+  getAngle={[Function]}
+  getAngle0={[Function]}
+  getColor={[Function]}
+  getLabel={[Function]}
+  getSize={[Function]}
+  height={300}
+  hideRootNode={false}
+  margin={
+    Object {
+      "bottom": 50,
+      "left": 50,
+      "right": 50,
+      "top": 50,
+    }
+  }
+  onValueMouseOut={[Function]}
+  onValueMouseOver={[Function]}
+  style={
+    Object {
+      "stroke": "#fff",
+    }
+  }
+  width={350}
+/>
+`;

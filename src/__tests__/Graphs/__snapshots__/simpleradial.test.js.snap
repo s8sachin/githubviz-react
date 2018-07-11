@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SimpleRadialChart should mount simpleradialchart component 1`] = `
+<RadialChart
+  animation={true}
+  className=""
+  colorRange={
+    Array [
+      "#12939A",
+      "#79C7E3",
+      "#1A3177",
+      "#FF9833",
+      "#EF5D28",
+    ]
+  }
+  colorType="category"
+  data={
+    Array [
+      Object {
+        "angle": 1,
+        "id": 1,
+        "innerRadius": null,
+        "opacity": 1,
+        "radius": 10,
+      },
+      Object {
+        "angle": 2,
+        "id": 2,
+        "innerRadius": null,
+        "label": "Super Custom label",
+        "opacity": 1,
+        "radius": 20,
+        "subLabel": "With annotation",
+      },
+      Object {
+        "angle": 5,
+        "id": 3,
+        "innerRadius": null,
+        "label": "Alt Label",
+        "opacity": 1,
+        "radius": 5,
+      },
+      Object {
+        "angle": 3,
+        "id": 4,
+        "innerRadius": null,
+        "opacity": 1,
+        "radius": 14,
+      },
+      Object {
+        "angle": 5,
+        "id": 5,
+        "innerRadius": null,
+        "opacity": 1,
+        "radius": 12,
+        "subLabel": "Sub Label only",
+      },
+    ]
+  }
+  getAngle={[Function]}
+  getAngle0={[Function]}
+  getLabel={[Function]}
+  getRadius={[Function]}
+  getRadius0={[Function]}
+  getSubLabel={[Function]}
+  height={300}
+  labelsAboveChildren={true}
+  onMouseLeave={[Function]}
+  onValueMouseOver={[Function]}
+  radiusDomain={
+    Array [
+      0,
+      20,
+    ]
+  }
+  showLabels={true}
+  width={600}
+>
+  <CircularGridLines
+    centerX={0}
+    centerY={0}
+    rRange={
+      Array [
+        0,
+        150,
+      ]
+    }
+    tickTotal={20}
+  />
+</RadialChart>
+`;

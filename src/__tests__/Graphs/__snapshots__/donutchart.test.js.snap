@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Donutcharts should mount Header component 1`] = `
+<RadialChart
+  className="donut-chart-example"
+  colorRange={
+    Array [
+      "#12939A",
+      "#79C7E3",
+      "#1A3177",
+      "#FF9833",
+      "#EF5D28",
+    ]
+  }
+  colorType="category"
+  data={
+    Array [
+      Object {
+        "className": "custom-class",
+        "theta": 11,
+      },
+      Object {
+        "theta": 12,
+      },
+      Object {
+        "theta": 13,
+      },
+      Object {
+        "theta": 14,
+      },
+      Object {
+        "theta": 15,
+      },
+    ]
+  }
+  getAngle={[Function]}
+  getAngle0={[Function]}
+  getLabel={[Function]}
+  getRadius={[Function]}
+  getRadius0={[Function]}
+  getSubLabel={[Function]}
+  height={300}
+  innerRadius={100}
+  onSeriesMouseOut={[Function]}
+  onValueMouseOver={[Function]}
+  radius={140}
+  width={300}
+/>
+`;

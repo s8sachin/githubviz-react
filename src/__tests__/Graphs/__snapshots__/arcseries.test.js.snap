@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Arcseries should mount Header component 1`] = `
+<div>
+  <showcase
+    buttonContent="UPDATE"
+    onClick={[Function]}
+  />
+  <XYPlot
+    className=""
+    height={300}
+    width={300}
+    xDomain={
+      Array [
+        -5,
+        5,
+      ]
+    }
+    yDomain={
+      Array [
+        -5,
+        5,
+      ]
+    }
+  >
+    <XAxis
+      attr="x"
+      attrAxis="y"
+      orientation="bottom"
+    />
+    <YAxis
+      attr="y"
+      attrAxis="x"
+      orientation="left"
+    />
+    <ArcSeries
+      animation={true}
+      arcClassName=""
+      center={
+        Object {
+          "x": 0,
+          "y": 0,
+        }
+      }
+      className=""
+      colorType="category"
+      data={
+        Array [
+          Object {
+            "angle": 0.3141592653589793,
+            "angle0": 0,
+            "color": 0,
+            "radius": 1.9479631693493935,
+            "radius0": 0,
+          },
+          Object {
+            "angle": 0.6283185307179586,
+            "angle0": 0.3141592653589793,
+            "color": 1,
+            "radius": 3.0848975096504248,
+            "radius0": 0,
+          },
+          Object {
+            "angle": 0.9424777960769379,
+            "angle0": 0.6283185307179586,
+            "color": 2,
+            "radius": 1.8608247970191458,
+            "radius0": 0,
+          },
+          Object {
+            "angle": 1.2566370614359172,
+            "angle0": 0.9424777960769379,
+            "color": 3,
+            "radius": 2.7276903684506673,
+            "radius0": 0,
+          },
+          Object {
+            "angle": 1.5707963267948966,
+            "angle0": 1.2566370614359172,
+            "color": 4,
+            "radius": 1.5807076262069906,
+            "radius0": 0,
+          },
+          Object {
+            "angle": 3.590124309161898,
+            "angle0": 0,
+            "radius": 1.1,
+            "radius0": 0.8,
+          },
+        ]
+      }
+      onSeriesMouseOut={[Function]}
+      onValueMouseOver={[Function]}
+      radiusDomain={
+        Array [
+          0,
+          4,
+        ]
+      }
+      stack={false}
+      style={Object {}}
+    />
+    <ArcSeries
+      animation={true}
+      arcClassName=""
+      center={
+        Object {
+          "x": -2,
+          "y": 2,
+        }
+      }
+      className=""
+      colorType="literal"
+      data={
+        Array [
+          Object {
+            "angle": 4.834672915691549,
+            "angle0": 0,
+            "radius": 10,
+            "radius0": 0,
+          },
+          Object {
+            "angle": 6.283185307179586,
+            "angle0": 4.834672915691549,
+            "radius": 10,
+            "radius0": 0,
+          },
+        ]
+      }
+      radiusType="literal"
+      stack={false}
+      style={Object {}}
+    />
+  </XYPlot>
+</div>
+`;
