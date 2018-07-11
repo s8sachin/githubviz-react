@@ -10,6 +10,8 @@ class Table2Data extends Component {
     componentWillMount() {
         const repoName = this.props.match.params.repoName;
         const prno = this.props.match.params.PRno;
+        const user = this.props.match.params.user;
+        this.setState({user})
         this.props.singlePullreqNcommitsAction({repoName, prno});
       }
   render() {
@@ -19,7 +21,7 @@ class Table2Data extends Component {
           <Grid>
             <Row className="show-grid">
                 <Col xs={12} md={2}>
-                <Button className="butn-top" bsStyle="primary" onClick={() => browserHistory.push('/singleUserNCommits/:label')}><Glyphicon glyph="chevron-left" /> Back</Button>
+                <Button className="butn-top" bsStyle="primary" onClick={() => browserHistory.push(`/singleUserNCommits/${this.state.user}`)}><Glyphicon glyph="chevron-left" /> Back</Button>
                 </Col>
                <Col xs={12} md={10}>
                 <h4 className="header-color2">single user pullrequest and commits </h4>

@@ -61,7 +61,7 @@ ReactDOM.render((
         <PrivateRoute exact path="/singleRepoNCommits/:repo" component={SingleRepoNCommits}/>
         <PrivateRoute exact path="/teamAdditionsDeletions/:team" component={TeamAdditionsDeletions}/>
         <PrivateRoute exact path="/singleUserNCommits/:label" component={SingleUserNCommits}/>
-        <PrivateRoute exact path="/table2Data/:repoName/:PRno" component={Table2Data}/>
+        <PrivateRoute exact path="/table2Data/:user/:repoName/:PRno" component={Table2Data}/>
         <PrivateRoute exact path="/tableData/:repoName/:branch" component={TableData }/>
       </Switch>
     </Router>

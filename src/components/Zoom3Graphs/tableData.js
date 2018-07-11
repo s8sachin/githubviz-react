@@ -8,6 +8,7 @@ import browserHistory from '../../history';
 class TableData extends Component {
     componentWillMount() {
         const repoName = this.props.match.params.repoName;
+        this.setState({repoName})
         const branch = this.props.match.params.branch;
         this.props.committedDateNMessageAction({repoName, branch});
       }
@@ -18,7 +19,7 @@ class TableData extends Component {
             <Grid>
              <Row>
                <Col xs={12} md={4} className="margin-top">
-                 <Button className="butn-top" bsStyle="primary" onClick={() => browserHistory.push('/singleRepoNCommits/:repo')}><Glyphicon glyph="chevron-left" /> Back</Button>
+                 <Button className="butn-top" bsStyle="primary" onClick={() => browserHistory.push(`/singleRepoNCommits/${this.state.repoName}`)}><Glyphicon glyph="chevron-left" /> Back</Button>
               </Col>
               <Col xs={12} md={8}>
                <h4 className="header-color1">single user committedDate and Id </h4>

@@ -21,7 +21,7 @@ const lodingGraphData = [
     }
 
     handleClick (value) {
-      browserHistory.push(`/table2Data/${value.repo}/${value.label}`)
+      browserHistory.push(`/table2Data/${this.state.user}/${value.repo}/${value.label}`)
     }
     render () {
       var graphData = this.props.single_usern_commits[0] ? this.props.single_usern_commits : lodingGraphData;
