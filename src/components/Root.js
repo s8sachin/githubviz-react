@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Grid, Jumbotron, Button } from 'react-bootstrap';
 import Header from './commons/Header';
+
 import Auth from '../Auth';
 class Root extends Component {
 
